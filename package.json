@@ -21,7 +21,11 @@
   "eslintConfig": {
     "extends": [
       "react-app",
-      "react-app/jest"
+      "react-app/jest",
+      "prettier"
+    ],
+    "plugins": [
+      "prettier"
     ],
     "overrides": [
       {
@@ -52,6 +56,9 @@
     "@storybook/addon-links": "^6.3.12",
     "@storybook/node-logger": "^6.3.12",
     "@storybook/preset-create-react-app": "^3.2.0",
-    "@storybook/react": "^6.3.12"
+    "@storybook/react": "^6.3.12",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.4.1"
   }
 }
