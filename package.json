@@ -14,7 +14,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "lint": "eslint src --fix",
+    "lint": "eslint src --fix && prettier src --write",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public"
   },
@@ -41,13 +41,9 @@
   },
   "lint-staged": {
     "src/**/*.{js,jsx,json}": [
-      "prettier --write"
+      "prettier src --write",
+      "git add ."
     ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   },
   "browserslist": {
     "production": [
