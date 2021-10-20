@@ -1,7 +1,12 @@
-export const App = () => {
+import Header from "./components/header/Header";
+import "./App.scss";
+
+const App = () => {
   return (
-    <div className="App">
-      <h1>Hello ... my dear friends!</h1>
+    <div className="App" style={{ paddingTop: "20px" }}>
+      <Header />
     </div>
   );
 };
+
+export default App;
