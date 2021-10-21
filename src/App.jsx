@@ -3,7 +3,7 @@ import "./App.scss";
 
 const App = () => {
   return (
-    <div className="App" style={{ paddingTop: "20px" }}>
+    <div className="App">
       <Header />
     </div>
   );

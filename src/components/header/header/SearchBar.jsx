@@ -8,6 +8,12 @@ const SearchBar = () => {
     setValue(event.target.value);
   };
 
+  const styles = {
+    textField: {
+      width: "400px",
+    },
+  };
+
   return (
     <TextField
       value={value}
@@ -15,9 +21,7 @@ const SearchBar = () => {
       type="search"
       placeholder="Movies,person,movie theaters"
       variant="standard"
-      sx={{
-        width: "400px",
-      }}
+      sx={styles.textField}
     />
   );
 };
