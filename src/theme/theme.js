@@ -13,6 +13,15 @@ const theme = createTheme({
       dark: "#1c313a",
     },
   },
+  components: {
+    MuiAvatar: {
+      styleOverrides: {
+        root: {
+          backgroundColor: "green",
+        },
+      },
+    },
+  },
 });
 
 export default theme;
