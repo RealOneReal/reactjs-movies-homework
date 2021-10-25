@@ -4,9 +4,9 @@ import MovieCard from "./MovieCard";
 const MovieCardList = (props) => {
   const { results } = props;
   return (
-    <Grid container>
+    <Grid container spacing={1} justifyContent="center">
       {results.map((card) => (
-        <Grid item xs={9} md={2} key={card.id}>
+        <Grid item key={card.id}>
           <MovieCard {...card} />
         </Grid>
       ))}

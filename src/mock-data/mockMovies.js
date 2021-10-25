@@ -11,7 +11,7 @@ const DataFromTMDB = {
       overview:
         'Batman must face his most ruthless nemesis when a deformed madman calling himself "The Joker" seizes control of Gotham\'s criminal underworld.',
       popularity: 61.992,
-      poster_path: "/r7XF6duZy5ZXmOX7HE3fKGV1WLN.jpg",
+      poster_path: "/posters/Batman.jpeg",
       release_date: "1989-06-23",
       title: "Batman",
       video: false,
@@ -28,7 +28,7 @@ const DataFromTMDB = {
       overview:
         "In his second year of fighting crime, Batman uncovers corruption in Gotham City that connects to his own family while facing a serial killer known as the Riddler.",
       popularity: 87.562,
-      poster_path: "/pOaKyhMwALpCTg07eQQu0SQCbL9.jpg",
+      poster_path: "/posters/Batman.jpeg",
       release_date: "2022-03-03",
       title: "The Batman",
       video: false,
@@ -45,7 +45,7 @@ const DataFromTMDB = {
       overview:
         "Driven by tragedy, billionaire Bruce Wayne dedicates his life to uncovering and defeating the corruption that plagues his home, Gotham City.  Unable to work within the system, he instead creates a new identity, a symbol of fear for the criminal underworld - The Batman.",
       popularity: 72.539,
-      poster_path: "/8RW2runSEc34IwKN2D1aPcJd2UL.jpg",
+      poster_path: "/posters/BatmanBegins.jpeg",
       release_date: "2005-06-10",
       title: "Batman Begins",
       video: false,
@@ -62,7 +62,7 @@ const DataFromTMDB = {
       overview:
         "Tragedy strikes the Batman's life again when Robin Jason Todd tracks down his birth mother only to run afoul of the Joker. An adaptation of the 1988 comic book storyline of the same name.",
       popularity: 166.153,
-      poster_path: "/k8Q9ulyRE8fkvZMkAM9LPYMKctb.jpg",
+      poster_path: "/posters/BatmanDeathFamily.jpeg",
       release_date: "2020-10-13",
       title: "Batman: Death in the Family",
       video: false,
@@ -79,7 +79,7 @@ const DataFromTMDB = {
       overview:
         "A mysterious new villain known only as Hush uses a gallery of villains to destroy Batman's crime-fighting career as well as Bruce Wayne's personal life, which has been further complicated by a  relationship with Selina Kyle/Catwoman.",
       popularity: 41.522,
-      poster_path: "/eiVQORVyVuNNZHPAELuWtlXoQsD.jpg",
+      poster_path: "/posters/BatmanHush.jpeg",
       release_date: "2019-07-19",
       title: "Batman: Hush",
       video: false,
@@ -96,7 +96,7 @@ const DataFromTMDB = {
       overview:
         "As Gotham City's young vigilante, the Batman, struggles to pursue a brutal serial killer, district attorney Harvey Dent gets caught in a feud involving the criminal family of the Falcones.",
       popularity: 184.602,
-      poster_path: "/5X1n5q08mZ7NpNpxehMFODxfNYq.jpg",
+      poster_path: "/posters/BatmanHush.jpeg",
       release_date: "2021-07-26",
       title: "Batman: The Long Halloween, Part Two",
       video: false,
@@ -113,7 +113,7 @@ const DataFromTMDB = {
       overview:
         "While Batman deals with a deformed man calling himself the Penguin, an employee of a corrupt businessman transforms into the Catwoman.",
       popularity: 35.114,
-      poster_path: "/jKBjeXM7iBBV9UkUcOXx3m7FSHY.jpg",
+      poster_path: "/posters/Batman.jpeg",
       release_date: "1992-06-19",
       title: "Batman Returns",
       video: false,
@@ -130,7 +130,7 @@ const DataFromTMDB = {
       overview:
         'Damian Wayne is having a hard time coping with his father\'s "no killing" rule. Meanwhile, Gotham is going through hell with threats such as the insane Dollmaker, and the secretive Court of Owls.',
       popularity: 34.276,
-      poster_path: "/aGp9XDXmVM5lCKHWtgBC15S7XLr.jpg",
+      poster_path: "/posters/BatmanDeathFamily.jpeg",
       release_date: "2015-04-14",
       title: "Batman vs. Robin",
       video: false,
@@ -147,7 +147,7 @@ const DataFromTMDB = {
       overview:
         "Following a brutal series of murders taking place on Halloween, Thanksgiving, and Christmas, Gotham City's young vigilante known as the Batman sets out to pursue the mysterious serial killer alongside police officer James Gordon and district attorney Harvey Dent.",
       popularity: 145.804,
-      poster_path: "/sR7gppb0YGjwLvE6Vnj6wYv5MnW.jpg",
+      poster_path: "/posters/BatmanHush.jpeg",
       release_date: "2021-06-21",
       title: "Batman: The Long Halloween, Part One",
       video: false,
@@ -164,7 +164,7 @@ const DataFromTMDB = {
       overview:
         "Batman and Robin deal with relationship issues while preventing Mr. Freeze and Poison Ivy from attacking Gotham City.",
       popularity: 23.481,
-      poster_path: "/bsg0mrxUKyJoL4oSGP5mlhEsqp.jpg",
+      poster_path: "/posters/Batman.jpeg",
       release_date: "1997-06-20",
       title: "Batman & Robin",
       video: false,
@@ -198,7 +198,7 @@ const DataFromTMDB = {
       overview:
         "Fearing the actions of a god-like Super Hero left unchecked, Gotham City’s own formidable, forceful vigilante takes on Metropolis’s most revered, modern-day savior, while the world wrestles with what sort of hero it really needs. And with Batman and Superman at war with one another, a new threat quickly arises, putting mankind in greater danger than it’s ever known before.",
       popularity: 104.293,
-      poster_path: "/5UsK3grJvtQrtzEgqNlDljJW96w.jpg",
+      poster_path: "/posters/BatmanDeathFamily.jpeg",
       release_date: "2016-03-23",
       title: "Batman v Superman: Dawn of Justice",
       video: false,
@@ -249,7 +249,7 @@ const DataFromTMDB = {
       overview:
         "Bruce Wayne is missing. Alfred covers for him while Nightwing and Robin patrol Gotham City in his stead and a new player, Batwoman, investigates Batman's disappearance.",
       popularity: 34.559,
-      poster_path: "/1UmPJWfaivtNjsScJqcsbsQRGNY.jpg",
+      poster_path: "/posters/Batman.jpeg",
       release_date: "2016-03-22",
       title: "Batman: Bad Blood",
       video: false,
@@ -283,7 +283,7 @@ const DataFromTMDB = {
       overview:
         "A cooler-than-ever Bruce Wayne must deal with the usual suspects as they plan to rule Gotham City, while discovering that he has accidentally adopted a teenage orphan who wishes to become his sidekick.",
       popularity: 43.04,
-      poster_path: "/snGwr2gag4Fcgx2OGmH9otl6ofW.jpg",
+      poster_path: "/posters/Batman.jpeg",
       release_date: "2017-02-08",
       title: "The Lego Batman Movie",
       video: false,
@@ -300,7 +300,7 @@ const DataFromTMDB = {
       overview:
         "The Dynamic Duo faces four super-villains who plan to hold the world for ransom with the help of a secret invention that instantly dehydrates people.",
       popularity: 13.226,
-      poster_path: "/zzoPxWHnPa0eyfkMLgwbNvdEcVF.jpg",
+      poster_path: "",
       release_date: "1966-07-30",
       title: "Batman",
       video: false,
@@ -317,7 +317,7 @@ const DataFromTMDB = {
       overview:
         "As Batman hunts for the escaped Joker, the Clown Prince of Crime attacks the Gordon family to prove a diabolical point mirroring his own fall into madness.",
       popularity: 35.507,
-      poster_path: "/nxncAAL1FUKtQWs4uhs5jf1MVut.jpg",
+      poster_path: "/posters/Batman.jpeg",
       release_date: "2016-07-24",
       title: "Batman: The Killing Joke",
       video: false,
@@ -334,7 +334,7 @@ const DataFromTMDB = {
       overview:
         "Batman works desperately to find a bomb planted by the Joker while Amanda Waller sends her newly-formed Suicide Squad to break into Arkham Asylum and recover vital information stolen by the Riddler.",
       popularity: 33.738,
-      poster_path: "/mmQZekxr9gJ7c0Grkx6xgKvrpDy.jpg",
+      poster_path: "",
       release_date: "2014-08-12",
       title: "Batman: Assault on Arkham",
       video: false,

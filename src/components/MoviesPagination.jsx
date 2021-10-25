@@ -1,4 +1,4 @@
-import { Pagination } from "@mui/material";
+import { Pagination, PaginationItem } from "@mui/material";
 
 const MoviesPagination = (props) => {
   // todo: realize pagination after connecting Redux
@@ -9,6 +9,14 @@ const MoviesPagination = (props) => {
       page={page}
       hideNextButton={true}
       hidePrevButton={true}
+      color="primary"
+      renderItem={(item) => (
+        <PaginationItem
+          component="button"
+          sx={{ color: "primary.dark" }}
+          {...item}
+        />
+      )}
     />
   );
 };

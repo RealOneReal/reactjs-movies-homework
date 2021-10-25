@@ -6,7 +6,6 @@ import {
   Avatar,
   Box,
 } from "@mui/material";
-import theme from "../theme/theme";
 import { PlayCircle } from "@mui/icons-material";
 
 const MovieCard = (props) => {
@@ -23,25 +22,27 @@ const MovieCard = (props) => {
       width: "200px",
       height: "300px",
       position: "relative",
-      bgcolor: () => theme.palette.secondary.light,
+      bgcolor: "secondary.dark",
       ":hover": {
-        transition: "0.3s ease",
+        transition: "0.6s ease",
         opacity: 0.8,
       },
       ":hover .MuiAvatar-root": {
         display: "none",
       },
+      boxShadow: "initial",
     },
     hoverLayer: {
       width: "inherit",
       height: "220px",
       position: "absolute",
-      bgcolor: "black",
+      bgcolor: "secondary.dark",
       opacity: 0,
       textAlign: "center",
       pt: "60%",
       cursor: "pointer",
       ":hover": {
+        transition: " .3s ease",
         opacity: 1,
       },
     },
@@ -79,8 +80,10 @@ const MovieCard = (props) => {
         sx={styles.cardImage}
       />
       <CardContent sx={{ p: 1 }}>
-        <Typography variant="h6">{original_title}</Typography>
-        <Typography variant="subtitle2" sx={styles.genres}>
+        <Typography variant="h6" color="primary.light">
+          {original_title}
+        </Typography>
+        <Typography variant="subtitle2" sx={styles.genres} color="primary.dark">
           {genres}
         </Typography>
       </CardContent>

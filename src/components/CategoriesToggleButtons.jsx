@@ -14,7 +14,7 @@ const CategoriesToggleButtons = () => {
       mr: 3,
     },
     button: {
-      color: "white",
+      color: "secondary.light",
     },
   };
 
