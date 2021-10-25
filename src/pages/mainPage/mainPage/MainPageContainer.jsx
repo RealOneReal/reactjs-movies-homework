@@ -1,8 +1,7 @@
 import MovieCardList from "../../../components/MovieCardList";
-
+import DataFromTMDB from "../../../mock-data/mockMovies";
 const MainPageContainer = () => {
   // todo: add mockData from MovieDB
-  const data = [];
-  return <MovieCardList props={data} />;
+  return <MovieCardList {...DataFromTMDB} />;
 };
 export default MainPageContainer;

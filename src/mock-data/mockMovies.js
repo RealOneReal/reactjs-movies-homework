@@ -1,4 +1,4 @@
-export const DataFromTMDB = {
+const DataFromTMDB = {
   page: 1,
   results: [
     {
@@ -345,3 +345,5 @@ export const DataFromTMDB = {
   total_pages: 7,
   total_results: 128,
 };
+
+export default DataFromTMDB;

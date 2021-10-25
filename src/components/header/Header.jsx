@@ -9,9 +9,9 @@ const styles = {
 
 const Header = () => {
   return (
-    <AppBar>
+    <AppBar position="static">
       <Toolbar sx={styles.toolbar}>
-        <Typography variant="h4" component="span" sx={styles.typography}>
+        <Typography variant="h4" component="h1" sx={styles.typography}>
           TITLE
         </Typography>
         <SearchBar />
