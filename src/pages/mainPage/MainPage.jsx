@@ -7,8 +7,8 @@ import DataFromTMDB from "../../mock-data/mockMovies";
 const MainPage = () => {
   return (
     <Box sx={{ backgroundColor: "secondary.dark" }}>
-      <CategoriesToggleButtons />
-      <Container maxWidth="lg">
+      <Container maxWidth="lg" sx={{ pt: 2 }}>
+        <CategoriesToggleButtons />
         <MainPageContainer></MainPageContainer>
         <Box
           sx={{
