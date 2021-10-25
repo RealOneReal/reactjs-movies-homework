@@ -7,9 +7,11 @@ import {
   Box,
 } from "@mui/material";
 import { PlayCircle } from "@mui/icons-material";
+import { truncateString } from "../utils/stringUtils";
 
 const MovieCard = (props) => {
   const { poster_path, genre_ids, vote_average, original_title, id } = props;
+  const title = truncateString(original_title, 20);
 
   const genres = genre_ids?.length && genre_ids.join(" ");
 
@@ -81,7 +83,7 @@ const MovieCard = (props) => {
       />
       <CardContent sx={{ p: 1 }}>
         <Typography variant="h6" color="primary.light">
-          {original_title}
+          {title}
         </Typography>
         <Typography variant="subtitle2" sx={styles.genres} color="primary.dark">
           {genres}
