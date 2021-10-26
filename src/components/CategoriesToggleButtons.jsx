@@ -10,7 +10,10 @@ const CategoriesToggleButtons = () => {
   const styles = {
     group: {
       display: "flex",
-      justifyContent: "flex-end",
+      justifyContent: {
+        md: "flex-end",
+        xs: "center",
+      },
       mr: 3,
     },
     button: {
