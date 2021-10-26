@@ -11,9 +11,8 @@ import { truncateString } from "../utils/stringUtils";
 
 const MovieCard = (props) => {
   const { poster_path, genre_ids, vote_average, original_title, id } = props;
-  const title = truncateString(original_title, 20);
-
-  const genres = genre_ids?.length && genre_ids.join(" ");
+  const title = truncateString(original_title, 19);
+  const genres = truncateString(genre_ids?.length && genre_ids.join(" "), 26);
 
   const handleClick = () => {
     console.log(id);

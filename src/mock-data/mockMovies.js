@@ -425,4 +425,14 @@ const genres = [
   },
 ];
 
+// todo: should do correct implementation in Redux in future of changing index for string value
+
+DataFromTMDB.results.map((film, indexFilm) => {
+  return film.genre_ids.map((categorie, indexCategorie) => {
+    const filter = genres.find((genre) => genre.id === categorie);
+    DataFromTMDB.results[indexFilm].genre_ids[indexCategorie] = filter.name;
+    return filter.name;
+  });
+});
+
 export default DataFromTMDB;
