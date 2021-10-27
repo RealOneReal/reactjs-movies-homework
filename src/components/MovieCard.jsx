@@ -31,7 +31,6 @@ const MovieCard = (props) => {
       ":hover .MuiAvatar-root": {
         display: "none",
       },
-      boxShadow: "initial",
     },
     hoverLayer: {
       width: "inherit",
@@ -58,7 +57,6 @@ const MovieCard = (props) => {
     cardImage: {
       width: "180px",
       ml: 1,
-      objectFit: "fit",
       mt: 1,
       borderRadius: "10px",
     },

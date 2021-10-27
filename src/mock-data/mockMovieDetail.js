@@ -102,7 +102,7 @@ const credits = {
       name: "Leonardo DiCaprio",
       original_name: "Leonardo DiCaprio",
       popularity: 23.614,
-      profile_path: "/wo2hJpn04vbtmh0B9utCFdsQhxM.jpg",
+      profile_path: "/posters/titanic/Leo.jpeg",
       cast_id: 21,
       character: "Jack Dawson",
       credit_id: "52fe425ac3a36847f80179cf",

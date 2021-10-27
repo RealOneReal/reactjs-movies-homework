@@ -1,6 +1,6 @@
 import { createTheme } from "@mui/material/styles";
 
-const theme = createTheme({
+let theme = createTheme({
   palette: {
     primary: {
       main: "#84ffff",
@@ -20,6 +20,23 @@ const theme = createTheme({
           backgroundColor: "green",
         },
       },
+    },
+    MuiCard: {
+      styleOverrides: {
+        root: { boxShadow: "initial" },
+      },
+    },
+  },
+});
+
+theme = createTheme(theme, {
+  typography: {
+    subtitle1: {
+      color: theme.palette.primary.light,
+    },
+    subtitle2: {
+      color: theme.palette.primary.dark,
+      fontWeight: "400",
     },
   },
 });
