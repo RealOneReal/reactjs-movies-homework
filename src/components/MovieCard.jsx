@@ -1,11 +1,4 @@
-import {
-  Card,
-  Typography,
-  CardMedia,
-  CardContent,
-  Avatar,
-  Box,
-} from "@mui/material";
+import { Card, Typography, CardMedia, CardContent, Box } from "@mui/material";
 import { PlayCircle } from "@mui/icons-material";
 import { truncateString } from "../utils/stringUtils";
 

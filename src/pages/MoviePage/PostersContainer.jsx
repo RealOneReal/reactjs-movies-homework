@@ -6,9 +6,10 @@ const PostersContainer = () => {
 
   return (
     <Grid container gap={1}>
-      {posters.map((img) => (
+      {posters.map((img, index) => (
         <Grid
           item
+          key={index}
           sx={{
             backgroundImage: `url(${img.file_path})`,
             backgroundPosition: "center center",
