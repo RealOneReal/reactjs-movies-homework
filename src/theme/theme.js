@@ -31,12 +31,22 @@ let theme = createTheme({
 
 theme = createTheme(theme, {
   typography: {
+    body1: {
+      color: theme.palette.primary.light,
+      marginBottom: "16px",
+    },
+    h3: {
+      color: theme.palette.primary.light,
+    },
     subtitle1: {
       color: theme.palette.primary.light,
     },
     subtitle2: {
       color: theme.palette.primary.dark,
       fontWeight: "400",
+    },
+    h6: {
+      color: theme.palette.primary.dark,
     },
   },
 });

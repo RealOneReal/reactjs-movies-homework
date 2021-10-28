@@ -15,9 +15,10 @@ const ActorCard = ({ id, profile_path, name, character }) => {
       height: "225px",
       cursor: "pointer",
       ":hover ": {
-        transform: "translateY(-20px)",
+        transform: "translateY(-16px)",
         transition: ".3s ease",
       },
+      bgcolor: "secondary.dark",
     },
     cardMedia: { height: "170px", borderRadius: "10px" },
   };
