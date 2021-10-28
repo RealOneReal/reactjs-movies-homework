@@ -28,7 +28,7 @@ const MovieCard = (props) => {
         transition: "0.6s ease",
         opacity: 0.8,
       },
-      ":hover .MuiAvatar-root": {
+      ":hover .rating": {
         display: "none",
       },
     },
@@ -46,13 +46,16 @@ const MovieCard = (props) => {
         opacity: 1,
       },
     },
-    playIcon: { color: "green", fontSize: "60px" },
+    playIcon: { color: "primary.light", fontSize: "60px" },
     ratingBox: {
       position: "absolute",
       top: "20px",
-      left: "5px",
+      left: "0px",
       borderRadius: "5px",
-      height: "20px",
+      height: "25px",
+      width: "40px",
+      bgcolor: "green",
+      textAlign: "center",
     },
     cardImage: {
       width: "180px",
@@ -69,9 +72,11 @@ const MovieCard = (props) => {
         <PlayCircle sx={styles.playIcon} />
       </Box>
 
-      <Avatar variant="square" sx={styles.ratingBox}>
-        <Typography>{vote_average}</Typography>
-      </Avatar>
+      <Box className="rating" sx={styles.ratingBox}>
+        <Typography variant="subtitle1" component="span">
+          {vote_average}
+        </Typography>
+      </Box>
       <CardMedia
         component="img"
         height="220px"
