@@ -1,4 +1,4 @@
-import Header from "./components/header/Header";
+import Header from "./components/Header";
 import ActorPage from "./pages/ActorPage";
 import { person } from "./mock-data/mockPersonDetails";
 import "./App.scss";

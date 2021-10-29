@@ -1,6 +1,6 @@
 import { AppBar, Toolbar, Typography } from "@mui/material";
-import SearchBar from "./header/SearchBar";
-import LanguageSwitcher from "./header/LanguageSwitcher";
+import SearchBar from "./SearchBar";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const styles = {
   toolbar: { display: "flex", justifyContent: "space-evenly" },
