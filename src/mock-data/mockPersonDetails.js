@@ -1,3 +1,5 @@
+import { genres } from "./mockMovies";
+
 const person = {
   adult: false,
   also_known_as: [
@@ -29,7 +31,7 @@ const person = {
   name: "Leonardo DiCaprio",
   place_of_birth: "Los Angeles, California, USA",
   popularity: 26.158,
-  profile_path: "/wo2hJpn04vbtmh0B9utCFdsQhxM.jpg",
+  profile_path: "/posters/titanic/Leo.jpeg",
 };
 
 let movies = {
@@ -2072,8 +2074,76 @@ let movies = {
   id: 6193,
 };
 
+const photos = {
+  id: 6193,
+  profiles: [
+    {
+      aspect_ratio: 0.667,
+      height: 1563,
+      iso_639_1: null,
+      file_path: "/posters/titanic/response.jpeg",
+      vote_average: 5.62,
+      vote_count: 22,
+      width: 1042,
+    },
+    {
+      aspect_ratio: 0.666,
+      height: 1640,
+      iso_639_1: null,
+      file_path: "/posters/titanic/response_1.jpeg",
+      vote_average: 5.346,
+      vote_count: 17,
+      width: 1093,
+    },
+    {
+      aspect_ratio: 0.667,
+      height: 3000,
+      iso_639_1: null,
+      file_path: "/posters/titanic/response_2.jpeg",
+      vote_average: 5.282,
+      vote_count: 14,
+      width: 2000,
+    },
+    {
+      aspect_ratio: 0.667,
+      height: 2190,
+      iso_639_1: null,
+      file_path: "/posters/titanic/response_3.jpeg",
+      vote_average: 5.276,
+      vote_count: 12,
+      width: 1460,
+    },
+    {
+      aspect_ratio: 0.666,
+      height: 1481,
+      iso_639_1: null,
+      file_path: "/posters/titanic/response_4.jpeg",
+      vote_average: 5.276,
+      vote_count: 12,
+      width: 987,
+    },
+    {
+      aspect_ratio: 0.667,
+      height: 750,
+      iso_639_1: null,
+      file_path: "/posters/titanic/response.jpeg",
+      vote_average: 5.19,
+      vote_count: 5,
+      width: 500,
+    },
+  ],
+}.profiles.splice(0, 5);
+
 movies = movies.cast
   ?.sort((film, filmB) => filmB.vote_average - film.vote_average)
   .slice(0, 10);
+
+movies.map((film, indexFilm) => {
+  return film.genre_ids.map((categorie, indexCategorie) => {
+    const filter = genres.find((genre) => genre.id === categorie);
+    movies[indexFilm].genre_ids[indexCategorie] = filter.name;
+    return filter.name;
+  });
+});
 console.log(movies);
-export { person, movies };
+export { person, movies, photos };

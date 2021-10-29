@@ -346,7 +346,7 @@ const DataFromTMDB = {
   total_results: 128,
 };
 
-const genres = [
+export const genres = [
   {
     id: 28,
     name: "Action",

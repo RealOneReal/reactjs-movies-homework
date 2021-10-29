@@ -1,13 +1,13 @@
 import Header from "./components/header/Header";
-import MoviePage from "./pages/MoviePage";
-import { movie } from "./mock-data/mockMovieDetail";
+import ActorPage from "./pages/ActorPage";
+import { person } from "./mock-data/mockPersonDetails";
 import "./App.scss";
 
 const App = () => {
   return (
     <div className="App">
       <Header />
-      <MoviePage {...movie} />
+      <ActorPage {...person} />
     </div>
   );
 };

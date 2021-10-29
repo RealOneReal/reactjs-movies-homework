@@ -48,6 +48,9 @@ theme = createTheme(theme, {
     h6: {
       color: theme.palette.primary.dark,
     },
+    h5: {
+      color: theme.palette.primary.dark,
+    },
   },
 });
 
