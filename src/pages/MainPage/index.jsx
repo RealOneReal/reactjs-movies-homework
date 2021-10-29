@@ -1,7 +1,7 @@
 import { Box, Container } from "@mui/material";
-import CategoriesToggleButtons from "../../components/CategoriesToggleButtons";
-import MainPageContainer from "./mainPage/MainPageContainer";
+import MainPageContainer from "./MainPageContainer";
 import MoviesPagination from "../../components/MoviesPagination";
+import CategoriesToggleButtons from "../../components/CategoriesToggleButtons";
 import DataFromTMDB from "../../mock-data/mockMovies";
 
 const MainPage = () => {

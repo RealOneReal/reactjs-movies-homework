@@ -1,6 +1,6 @@
 import { Card, Typography, CardMedia, CardContent, Box } from "@mui/material";
 import { PlayCircle } from "@mui/icons-material";
-import { truncateString } from "../utils/stringUtils";
+import { truncateString } from "../../utils/stringUtils";
 
 const MovieCard = (props) => {
   const { poster_path, genre_ids, vote_average, original_title, id } = props;

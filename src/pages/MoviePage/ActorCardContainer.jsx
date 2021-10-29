@@ -1,5 +1,5 @@
 import { Box } from "@mui/system";
-import ActorCardList from "../../components/ActorCardList/ActorCardList";
+import ActorCardList from "../../components/ActorCardList";
 import { credits } from "../../mock-data/mockMovieDetail";
 
 const ActorCardContainer = () => {
