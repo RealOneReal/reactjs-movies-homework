@@ -11,7 +11,7 @@ const SearchBar = () => {
   const styles = {
     textField: {
       width: {
-        xs: "200px",
+        xs: "150px",
         md: "400px",
       },
     },

@@ -8,11 +8,26 @@ const LanguageSwitcher = () => {
     setLanguage(event.target.value);
   };
 
+  const styles = {
+    menuItem: {
+      color: "secondary.dark",
+    },
+  };
+
   return (
     <FormControl>
-      <Select value={language} onChange={handleChange} variant="standard">
-        <MenuItem value="EN">EN</MenuItem>
-        <MenuItem value="RU">RU</MenuItem>
+      <Select
+        value={language}
+        onChange={handleChange}
+        variant="standard"
+        color="secondary"
+      >
+        <MenuItem value="EN" sx={styles.menuItem}>
+          EN
+        </MenuItem>
+        <MenuItem value="RU" sx={styles.menuItem}>
+          RU
+        </MenuItem>
       </Select>
     </FormControl>
   );
