@@ -14,6 +14,9 @@ const SearchBar = () => {
         xs: "150px",
         md: "400px",
       },
+      ".css-1x51dt5-MuiInputBase-input-MuiInput-input": {
+        color: "primary.dark",
+      },
     },
   };
 
@@ -21,7 +24,7 @@ const SearchBar = () => {
     <TextField
       value={value}
       onChange={handleInput}
-      type="search"
+      type="text"
       placeholder="Movies,person,movie theaters"
       variant="standard"
       sx={styles.textField}

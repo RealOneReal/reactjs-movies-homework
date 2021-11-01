@@ -12,6 +12,12 @@ const LanguageSwitcher = () => {
     menuItem: {
       color: "secondary.dark",
     },
+    select: {
+      color: "primary.dark",
+      ".css-pqjvzy-MuiSvgIcon-root-MuiSelect-icon": {
+        color: "primary.dark",
+      },
+    },
   };
 
   return (
@@ -21,6 +27,7 @@ const LanguageSwitcher = () => {
         onChange={handleChange}
         variant="standard"
         color="secondary"
+        sx={styles.select}
       >
         <MenuItem value="EN" sx={styles.menuItem}>
           EN

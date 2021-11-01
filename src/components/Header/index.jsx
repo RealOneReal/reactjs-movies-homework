@@ -4,12 +4,12 @@ import LanguageSwitcher from "./LanguageSwitcher";
 
 const styles = {
   toolbar: { display: "flex", justifyContent: "space-evenly" },
-  typography: { fontWeight: 600 },
+  typography: { fontWeight: 600, color: "primary.dark" },
 };
 
 const Header = () => {
   return (
-    <AppBar position="static">
+    <AppBar position="static" sx={{ backgroundColor: "secondary.main" }}>
       <Toolbar sx={styles.toolbar}>
         <Typography variant="h4" component="h1" sx={styles.typography}>
           TITLE
