@@ -7,12 +7,14 @@ const styles = {
   typography: { fontWeight: 600, color: "primary.dark" },
 };
 
+const title = "TITLE";
+
 const Header = () => {
   return (
     <AppBar position="static" sx={{ backgroundColor: "secondary.main" }}>
       <Toolbar sx={styles.toolbar}>
         <Typography variant="h4" component="h1" sx={styles.typography}>
-          TITLE
+          {title}
         </Typography>
         <SearchBar />
         <LanguageSwitcher />
