@@ -1,4 +1,4 @@
-import MovieCardList from "../../components/MovieCardList";
+import MovieCardList from "../../components/MovieCardList/MovieCardList";
 import { movies } from "../../mock-data/mockPersonDetails";
 
 const PlayInMovies = () => {

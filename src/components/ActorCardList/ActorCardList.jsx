@@ -1,5 +1,5 @@
 import { Grid } from "@mui/material";
-import ActorCard from "../ActorCard";
+import ActorCard from "../ActorCard/ActorCard";
 
 const ActorCardList = ({ cast }) => {
   return (
