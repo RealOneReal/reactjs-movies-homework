@@ -24,7 +24,7 @@ const MovieCard = ({
   };
 
   return (
-    <Box sx={styles.container}>
+    <Box sx={styles.container} onClick={handleClick}>
       <Card sx={styles.card}>
         <Box className="rating" sx={styles.ratingBox}>
           <Typography variant="subtitle1" component="span">
@@ -52,7 +52,7 @@ const MovieCard = ({
           </Typography>
         </CardContent>
       </Card>
-      <Box sx={styles.hoverLayer} onClick={handleClick}>
+      <Box sx={styles.hoverLayer}>
         <PlayCircle sx={styles.playIcon} />
       </Box>
     </Box>
