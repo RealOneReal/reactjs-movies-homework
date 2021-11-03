@@ -1,5 +1,5 @@
 import renderer from "react-test-renderer";
-import { render, screen } from "@testing-library/react";
+import { render, screen, fireEvent } from "@testing-library/react";
 import ActorCard from "../ActorCard";
 import userEvent from "@testing-library/user-event";
 
@@ -22,5 +22,11 @@ describe("ActorCard", () => {
     const card = screen.getByAltText(/Michael Nordman/i);
     userEvent.click(card);
     expect(console.log).toBeCalled();
+  });
+  it("should have broken image at background on fallback", () => {
+    render(<ActorCard {...mockData} />);
+    const image = screen.getByAltText(/Michael Nordman/i);
+    fireEvent.error(image);
+    expect(image.src).toMatch(/broken-image.png$/i);
   });
 });

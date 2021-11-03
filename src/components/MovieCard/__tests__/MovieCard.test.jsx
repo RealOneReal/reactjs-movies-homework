@@ -1,5 +1,5 @@
 import renderer from "react-test-renderer";
-import { render, screen } from "@testing-library/react";
+import { render, screen, fireEvent } from "@testing-library/react";
 import MovieCard from "../MovieCard";
 import userEvent from "@testing-library/user-event";
 
@@ -21,5 +21,11 @@ describe("MovieCard", () => {
     const card = screen.getByText(/Ninja/i);
     userEvent.click(card);
     expect(console.log).toBeCalled();
+  });
+  it("should have broken image on background in fallback", () => {
+    render(<MovieCard {...mockData} />);
+    const image = screen.getByAltText(/Ninja/i);
+    fireEvent.error(image);
+    expect(image.src).toMatch(/broken-image.png$/i);
   });
 });
