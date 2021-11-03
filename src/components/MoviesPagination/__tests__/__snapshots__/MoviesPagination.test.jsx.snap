@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MoviesPagination should be render 1`] = `
+<nav
+  aria-label="pagination navigation"
+  className="MuiPagination-root MuiPagination-text css-1oj2twp-MuiPagination-root"
+>
+  <ul
+    className="MuiPagination-ul css-wjh20t-MuiPagination-ul"
+  >
+    <li>
+      <button
+        aria-current="true"
+        aria-label="page 1"
+        className="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-sizeMedium MuiPaginationItem-text MuiPaginationItem-circular MuiPaginationItem-textPrimary Mui-selected MuiPaginationItem-page css-7oxwxk-MuiButtonBase-root-MuiPaginationItem-root"
+        disabled={false}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onContextMenu={[Function]}
+        onDragLeave={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        tabIndex={0}
+        type="button"
+      >
+        1
+      </button>
+    </li>
+  </ul>
+</nav>
+`;

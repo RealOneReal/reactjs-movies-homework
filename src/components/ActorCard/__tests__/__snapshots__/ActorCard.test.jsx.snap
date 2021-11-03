@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ActorCard should be render 1`] = `
+<div
+  className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1ifd40a-MuiPaper-root-MuiCard-root"
+  onClick={[Function]}
+>
+  <img
+    alt="Michael Nordman"
+    className="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-1adevo0-MuiCardMedia-root"
+    onError={[Function]}
+    src="/123"
+  />
+  <div
+    className="MuiCardContent-root css-102cj0y-MuiCardContent-root"
+  >
+    <div
+      className="MuiTypography-root MuiTypography-subtitle1 css-10wpov9-MuiTypography-root"
+    >
+      Michael Nordman
+    </div>
+    <div
+      className="MuiTypography-root MuiTypography-subtitle2 css-ati914-MuiTypography-root"
+    >
+      Dude George
+    </div>
+  </div>
+</div>
+`;
