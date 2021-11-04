@@ -9,7 +9,7 @@ const MainPage = () => {
     <Box sx={{ backgroundColor: "secondary.dark" }}>
       <Container maxWidth="lg" sx={{ pt: 2 }}>
         <CategoriesToggleButtons />
-        <MainPageContainer></MainPageContainer>
+        <MainPageContainer />
         <Box
           sx={{
             display: "flex",

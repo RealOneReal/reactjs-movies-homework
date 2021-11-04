@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MainPage should be render 1`] = `
+<div
+  className="MuiBox-root css-4ozt90"
+>
+  <div
+    className="MuiContainer-root MuiContainer-maxWidthLg css-r5r38p-MuiContainer-root"
+  >
+    <CategoriesToggleButtons />
+    <MainPageContainer />
+    <div
+      className="MuiBox-root css-2hoarh"
+    >
+      <MoviesPaggination
+        data="mock data"
+      />
+    </div>
+  </div>
+</div>
+`;
