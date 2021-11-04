@@ -1,8 +1,7 @@
 import { Grid } from "@mui/material";
 import MovieCard from "../MovieCard/MovieCard";
 
-const MovieCardList = (props) => {
-  const { results } = props;
+const MovieCardList = ({ results }) => {
   return (
     <Grid container spacing={1} justifyContent="center">
       {results.map((card) => (
