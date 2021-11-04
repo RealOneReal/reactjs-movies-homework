@@ -1,8 +1,7 @@
 import { Pagination, PaginationItem } from "@mui/material";
 
-const MoviesPagination = (props) => {
+const MoviesPagination = ({ total_pages, page }) => {
   // todo: realize pagination after connecting Redux
-  const { total_pages, page } = props;
   return (
     <Pagination
       count={total_pages}
