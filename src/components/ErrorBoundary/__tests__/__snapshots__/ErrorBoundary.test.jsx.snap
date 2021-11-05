@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ErrorBoundary should render children component without error 1`] = `
+<div
+  data-testid="test"
+>
+  Hello
+</div>
+`;
+
+exports[`ErrorBoundary should render error 1`] = `
+<div
+  className="MuiBox-root css-4ozt90"
+>
+  <div
+    className="MuiContainer-root MuiContainer-maxWidthLg css-r5r38p-MuiContainer-root"
+  >
+    <div
+      className="MuiBox-root css-l3vw6"
+    >
+      <h4
+        className="MuiTypography-root MuiTypography-h4 css-1tg5hpw-MuiTypography-root"
+      >
+        Something went wrong ...
+      </h4>
+    </div>
+  </div>
+</div>
+`;
