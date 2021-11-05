@@ -20,6 +20,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test-cov": "npm test -- --coverage --watchAll=false",
     "lint": "eslint src --fix",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public"
@@ -74,5 +75,16 @@
     "husky": "^7.0.2",
     "lint-staged": "^11.2.3",
     "prettier": "^2.4.1"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "**/*.{js,jsx}",
+      "!**/node_modules/**",
+      "!**/theme/**",
+      "!**/__snapshots__/**",
+      "!src/mock-data/**",
+      "!src/App.jsx",
+      "!src/index.jsx"
+    ]
   }
 }
