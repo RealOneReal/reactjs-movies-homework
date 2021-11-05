@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PostersContainer should be render 1`] = `
+<div
+  className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-undefined css-1dfafci-MuiGrid-root"
+>
+  <div
+    className="MuiGrid-root MuiGrid-item css-1ct45ut-MuiGrid-root"
+  />
+  <div
+    className="MuiGrid-root MuiGrid-item css-5fjczf-MuiGrid-root"
+  />
+  <div
+    className="MuiGrid-root MuiGrid-item css-1ct45ut-MuiGrid-root"
+  />
+  <div
+    className="MuiGrid-root MuiGrid-item css-1f730dw-MuiGrid-root"
+  />
+  <div
+    className="MuiGrid-root MuiGrid-item css-1ct45ut-MuiGrid-root"
+  />
+  <div
+    className="MuiGrid-root MuiGrid-item css-1f730dw-MuiGrid-root"
+  />
+  <div
+    className="MuiGrid-root MuiGrid-item css-1ct45ut-MuiGrid-root"
+  />
+  <div
+    className="MuiGrid-root MuiGrid-item css-1f730dw-MuiGrid-root"
+  />
+</div>
+`;

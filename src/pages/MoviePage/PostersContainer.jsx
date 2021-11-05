@@ -2,7 +2,7 @@ import { Grid } from "@mui/material";
 import { images } from "../../mock-data/mockMovieDetail";
 
 const PostersContainer = () => {
-  const posters = images.posters?.filter((_img, index) => index < 8);
+  const posters = images.posters?.slice(0, 8);
 
   return (
     <Grid container gap={1}>

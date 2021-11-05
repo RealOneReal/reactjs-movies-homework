@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ActorCardContainer should be render 1`] = `
+<div
+  className="MuiBox-root css-1yuhvjn"
+>
+  <ActorCardList
+    cast={
+      Array [
+        "Titanic",
+        "Batman",
+        "Brat 1",
+        "Brat 2",
+        "Brat 3",
+      ]
+    }
+  />
+</div>
+`;
