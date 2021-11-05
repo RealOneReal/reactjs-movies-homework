@@ -2145,5 +2145,4 @@ movies.map((film, indexFilm) => {
     return filter.name;
   });
 });
-console.log(movies);
 export { person, movies, photos };

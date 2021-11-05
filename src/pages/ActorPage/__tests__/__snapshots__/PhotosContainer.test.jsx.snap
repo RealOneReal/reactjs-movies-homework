@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PhotosContainer should be render 1`] = `
+<div
+  className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-undefined css-1xzqqmo-MuiGrid-root"
+>
+  <div
+    className="MuiGrid-root MuiGrid-item css-17a1rzi-MuiGrid-root"
+  />
+  <div
+    className="MuiGrid-root MuiGrid-item css-108n9zz-MuiGrid-root"
+  />
+  <div
+    className="MuiGrid-root MuiGrid-item css-uxehou-MuiGrid-root"
+  />
+</div>
+`;

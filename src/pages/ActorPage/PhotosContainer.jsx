@@ -3,7 +3,7 @@ import { photos } from "../../mock-data/mockPersonDetails";
 
 const PhotosContainer = () => {
   return (
-    <Grid container gap={2}>
+    <Grid container justifyContent="space-between">
       {photos.map((photo, index) => (
         <Grid
           item
