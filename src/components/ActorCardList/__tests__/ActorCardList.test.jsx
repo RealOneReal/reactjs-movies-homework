@@ -1,6 +1,8 @@
-import renderer from "react-test-renderer";
+import { render } from "@testing-library/react";
 import ActorCard from "../../ActorCard/ActorCard";
 import ActorCardList from "../ActorCardList";
+
+jest.mock("../../ActorCard/ActorCard", () => () => "ActorCard");
 
 const mockData = {
   cast: [
@@ -19,13 +21,9 @@ const mockData = {
   ],
 };
 
-jest.mock("../../ActorCard/ActorCard", () => {
-  return `ActorCard`;
-});
-
 describe("ActorCardList", () => {
-  it("should be render", () => {
-    const tree = renderer.create(<ActorCardList {...mockData} />);
-    expect(tree).toMatchSnapshot();
+  it("should be rendered", () => {
+    const { container } = render(<ActorCardList {...mockData} />);
+    expect(container).toMatchSnapshot();
   });
 });

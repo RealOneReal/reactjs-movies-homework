@@ -1,7 +1,7 @@
-import renderer from "react-test-renderer";
 import { render, screen, fireEvent } from "@testing-library/react";
-import ActorCard from "../ActorCard";
 import userEvent from "@testing-library/user-event";
+import ActorCard from "../ActorCard";
+import { truncateString } from "../../../utils/stringUtils";
 
 const mockData = {
   id: 123,
@@ -11,18 +11,26 @@ const mockData = {
 };
 
 jest.spyOn(window.console, "log");
+jest.mock("../../../utils/stringUtils");
+beforeEach(() => {
+  truncateString
+    .mockReturnValueOnce(mockData.name)
+    .mockReturnValueOnce(mockData.character);
+});
 
 describe("ActorCard", () => {
-  it("should be render", () => {
-    const tree = renderer.create(<ActorCard {...mockData} />).toJSON();
-    expect(tree).toMatchSnapshot();
+  it("should be rendered", () => {
+    const { container } = render(<ActorCard {...mockData} />);
+    expect(container).toMatchSnapshot();
   });
+
   it("should be clickable", () => {
     render(<ActorCard {...mockData} />);
     const card = screen.getByAltText(/Michael Nordman/i);
     userEvent.click(card);
     expect(console.log).toBeCalled();
   });
+
   it("should have broken image at background on fallback", () => {
     render(<ActorCard {...mockData} />);
     const image = screen.getByAltText(/Michael Nordman/i);
