@@ -14,7 +14,7 @@ const SearchBar = () => {
         xs: "150px",
         md: "400px",
       },
-      ".css-1x51dt5-MuiInputBase-input-MuiInput-input": {
+      "& .MuiInputBase-input": {
         color: "primary.dark",
       },
     },

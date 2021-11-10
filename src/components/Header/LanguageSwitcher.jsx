@@ -14,7 +14,7 @@ const LanguageSwitcher = () => {
     },
     select: {
       color: "primary.dark",
-      ".css-pqjvzy-MuiSvgIcon-root-MuiSelect-icon": {
+      "& .MuiSvgIcon-root": {
         color: "primary.dark",
       },
     },
