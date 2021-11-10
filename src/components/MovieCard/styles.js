@@ -45,6 +45,7 @@ const styles = {
   },
   cardImage: {
     width: "180px",
+    height: "220px",
     ml: 1,
     mt: 1,
     borderRadius: "10px",

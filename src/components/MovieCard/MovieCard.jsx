@@ -1,18 +1,18 @@
 import { Card, Typography, CardMedia, CardContent, Box } from "@mui/material";
 import { PlayCircle } from "@mui/icons-material";
-import Fallback from "../../assets/broken-image.png";
+import fallback from "../../assets/broken-image.png";
 import styles from "./styles";
 import { truncateString } from "../../utils/stringUtils";
 
 const MovieCard = ({
-  poster_path,
-  genre_ids,
-  vote_average,
-  original_title,
+  posterPath,
+  genreIds,
+  voteAverage,
+  originalTitle,
   id,
 }) => {
-  const title = truncateString(original_title, 19);
-  const genres = truncateString(genre_ids?.length && genre_ids.join(" "), 26);
+  const title = truncateString(originalTitle, 19);
+  const genres = truncateString(genreIds?.length && genreIds.join(" "), 26);
 
   const handleClick = () => {
     console.log(id);
@@ -20,7 +20,7 @@ const MovieCard = ({
 
   const handleMediaFallback = (event) => {
     event.target.style.objectFit = "contain";
-    return (event.target.src = Fallback);
+    return (event.target.src = fallback);
   };
 
   return (
@@ -28,14 +28,13 @@ const MovieCard = ({
       <Card sx={styles.card}>
         <Box className="rating" sx={styles.ratingBox}>
           <Typography variant="subtitle1" component="span">
-            {vote_average}
+            {voteAverage}
           </Typography>
         </Box>
         <CardMedia
           component="img"
-          height="220px"
           alt={title}
-          src={poster_path}
+          src={posterPath}
           sx={styles.cardImage}
           onError={handleMediaFallback}
         />
