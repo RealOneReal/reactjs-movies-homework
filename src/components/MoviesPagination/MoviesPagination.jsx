@@ -1,10 +1,10 @@
 import { Pagination, PaginationItem } from "@mui/material";
 
-const MoviesPagination = ({ total_pages, page }) => {
+const MoviesPagination = ({ totalPages, page }) => {
   // todo: realize pagination after connecting Redux
   return (
     <Pagination
-      count={total_pages}
+      count={totalPages}
       page={page}
       hideNextButton={true}
       hidePrevButton={true}

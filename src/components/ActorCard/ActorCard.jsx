@@ -11,9 +11,9 @@ const ActorCard = ({ id, profilePath, name, character }) => {
     console.log(id);
   };
 
-  const handleMediaFallback = (event) => {
-    event.target.style.objectFit = "contain";
-    return (event.target.src = fallback);
+  const handleMediaFallback = ({ target }) => {
+    target.style.objectFit = "contain";
+    return (target.src = fallback);
   };
 
   return (

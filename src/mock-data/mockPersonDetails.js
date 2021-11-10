@@ -29,9 +29,9 @@ const person = {
   imdb_id: "nm0000138",
   known_for_department: "Acting",
   name: "Leonardo DiCaprio",
-  place_of_birth: "Los Angeles, California, USA",
+  placeOfBirth: "Los Angeles, California, USA",
   popularity: 26.158,
-  profile_path: "/posters/titanic/Leo.jpeg",
+  profilePath: "/posters/titanic/Leo.jpeg",
 };
 
 let movies = {

@@ -342,7 +342,7 @@ const DataFromTMDB = {
       vote_count: 824,
     },
   ],
-  total_pages: 7,
+  totalPages: 7,
   total_results: 128,
 };
 

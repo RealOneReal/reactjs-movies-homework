@@ -4,8 +4,8 @@ import { useState } from "react";
 const LanguageSwitcher = () => {
   const [language, setLanguage] = useState("EN");
 
-  const handleChange = (event) => {
-    setLanguage(event.target.value);
+  const handleChange = ({ target }) => {
+    setLanguage(target.value);
   };
 
   const styles = {

@@ -4,8 +4,8 @@ import { useState } from "react";
 const SearchBar = () => {
   const [value, setValue] = useState("");
 
-  const handleInput = (event) => {
-    setValue(event.target.value);
+  const handleInput = ({ target }) => {
+    setValue(target.value);
   };
 
   const styles = {

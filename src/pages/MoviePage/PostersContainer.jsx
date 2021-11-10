@@ -11,7 +11,7 @@ const PostersContainer = () => {
           item
           key={index}
           sx={{
-            backgroundImage: `url(${img.file_path})`,
+            backgroundImage: `url(${img.filePath})`,
             backgroundPosition: "center center",
             backgroundSize: "contain",
             backgroundRepeat: "no-repeat",

@@ -3,10 +3,10 @@ import PhotosContainer from "./PhotosContainer";
 import PlayInMovies from "./PlayInMovies";
 
 const ActorPage = ({
-  profile_path,
+  profilePath,
   name,
   birthday,
-  place_of_birth,
+  placeOfBirth,
   biography,
 }) => {
   const styles = {
@@ -19,7 +19,7 @@ const ActorPage = ({
       },
     },
     actor_photo: {
-      backgroundImage: `url(${profile_path})`,
+      backgroundImage: `url(${profilePath})`,
       backgroundPosition: "center",
       backgroundSize: "cover",
       width: "250px",
@@ -43,7 +43,7 @@ const ActorPage = ({
             <Typography variant="subtitle2">Birthday:</Typography>
             <Typography variant="body1">{birthday}</Typography>
             <Typography variant="subtitle2">Place of birth:</Typography>
-            <Typography variant="body1">{place_of_birth}</Typography>
+            <Typography variant="body1">{placeOfBirth}</Typography>
             <Typography variant="subtitle2">Biography:</Typography>
             <Typography variant="body1">{biography}</Typography>
             <Typography variant="h6">Photos:</Typography>

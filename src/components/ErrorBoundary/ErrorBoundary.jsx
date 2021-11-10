@@ -1,7 +1,7 @@
-import React from "react";
+import React, { Component } from "react";
 import { Box, Container, Typography } from "@mui/material";
 
-class ErrorBoundary extends React.Component {
+class ErrorBoundary extends Component {
   constructor(props) {
     super(props);
     this.state = { hasError: false };
@@ -10,9 +10,7 @@ class ErrorBoundary extends React.Component {
   static getDerivedStateFromError(error) {
     return { hasError: true };
   }
-  componentDidCatch(error, errorInfo) {
-    console.error(error, errorInfo);
-  }
+
   render() {
     if (this.state.hasError) {
       return (

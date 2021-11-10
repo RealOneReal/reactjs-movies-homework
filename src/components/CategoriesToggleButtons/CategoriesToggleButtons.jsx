@@ -3,8 +3,9 @@ import { ToggleButtonGroup, ToggleButton } from "@mui/material";
 
 const CategoriesToggleButtons = () => {
   const [categorie, setCategorie] = useState("popular");
-  const handleChangeCategorie = (event) => {
-    setCategorie(event.target.value);
+
+  const handleChangeCategorie = ({ target }) => {
+    setCategorie(target.value);
   };
 
   const styles = {

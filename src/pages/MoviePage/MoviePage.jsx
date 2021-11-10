@@ -4,11 +4,11 @@ import PostersContainer from "./PostersContainer";
 import ActorCardContainer from "./ActorCardContainer";
 
 const MoviePage = ({
-  poster_path,
-  vote_average,
+  posterPath,
+  voteAverage,
   title,
   overview,
-  release_date,
+  releaseDate,
   revenue,
   runtime,
   genres,
@@ -26,7 +26,7 @@ const MoviePage = ({
       },
     },
     poster: {
-      backgroundImage: `url(${poster_path})`,
+      backgroundImage: `url(${posterPath})`,
       backgroundPosition: "center",
       backgroundSize: "cover",
       width: "250px",
@@ -56,7 +56,7 @@ const MoviePage = ({
           <Box className="main-section_movie">
             <Box sx={styles.poster}>
               <Typography component="div" variant="h6" sx={styles.poster_vote}>
-                {vote_average}
+                {voteAverage}
               </Typography>
             </Box>
           </Box>
@@ -66,7 +66,7 @@ const MoviePage = ({
             <Typography variant="subtitle2">Overview:</Typography>
             <Typography variant="body1">{overview}</Typography>
             <Typography variant="subtitle2">Release date:</Typography>
-            <Typography variant="body1">{release_date}</Typography>
+            <Typography variant="body1">{releaseDate}</Typography>
             <Typography variant="subtitle2">Revenue:</Typography>
             <Typography variant="body1">{`$ ${revenue}`}</Typography>
             <Typography variant="subtitle2">Duration:</Typography>
