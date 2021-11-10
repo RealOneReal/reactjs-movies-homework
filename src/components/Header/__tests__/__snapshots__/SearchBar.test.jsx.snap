@@ -1,27 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`SearchBar should be render 1`] = `
-<div
-  className="MuiFormControl-root MuiTextField-root css-rc5ywp-MuiFormControl-root-MuiTextField-root"
->
+exports[`SearchBar should be rendered 1`] = `
+<div>
   <div
-    className="MuiInput-root MuiInput-underline MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl css-1480iag-MuiInputBase-root-MuiInput-root"
-    onClick={[Function]}
+    class="MuiFormControl-root MuiTextField-root css-11b7oo1-MuiFormControl-root-MuiTextField-root"
   >
-    <input
-      aria-invalid={false}
-      autoFocus={false}
-      className="MuiInput-input MuiInputBase-input css-1x51dt5-MuiInputBase-input-MuiInput-input"
-      disabled={false}
-      onAnimationStart={[Function]}
-      onBlur={[Function]}
-      onChange={[Function]}
-      onFocus={[Function]}
-      placeholder="Movies,person,movie theaters"
-      required={false}
-      type="text"
-      value=""
-    />
+    <div
+      class="MuiInput-root MuiInput-underline MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl css-1480iag-MuiInputBase-root-MuiInput-root"
+    >
+      <input
+        aria-invalid="false"
+        class="MuiInput-input MuiInputBase-input css-1x51dt5-MuiInputBase-input-MuiInput-input"
+        placeholder="Movies,person,movie theaters"
+        type="text"
+        value=""
+      />
+    </div>
   </div>
 </div>
 `;

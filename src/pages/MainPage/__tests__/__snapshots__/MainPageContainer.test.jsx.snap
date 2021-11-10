@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`MainPageContainer should be render 1`] = `
-<MovieCardList
-  films="Titanic,Batman,Brat 2"
-/>
+exports[`MainPageContainer should be rendered 1`] = `
+<div>
+  MovieCardList
+</div>
 `;

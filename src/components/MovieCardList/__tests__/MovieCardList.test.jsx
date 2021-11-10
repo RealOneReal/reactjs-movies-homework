@@ -1,31 +1,26 @@
-import renderer from "react-test-renderer";
+import { render } from "@testing-library/react";
 import MovieCard from "../../MovieCard/MovieCard";
 import MovieCardList from "../MovieCardList";
 
 const mockData = {
   results: [
     {
-      original_title: "Brat 1",
       id: 1,
     },
     {
-      original_title: "Brat 2",
       id: 2,
     },
     {
-      original_title: "Brat 3",
       id: 3,
     },
   ],
 };
 
-jest.mock("../../MovieCard/MovieCard", () => {
-  return "MovieCard";
-});
+jest.mock("../../MovieCard/MovieCard", () => () => "MovieCard");
 
 describe("MovieCardList", () => {
-  it("should be render", () => {
-    const tree = renderer.create(<MovieCardList {...mockData} />);
-    expect(tree).toMatchSnapshot();
+  it("should be rendered", () => {
+    const { container } = render(<MovieCardList {...mockData} />);
+    expect(container).toMatchSnapshot();
   });
 });

@@ -1,13 +1,11 @@
 import { render } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import renderer from "react-test-renderer";
 import LanguageSwitcher from "../LanguageSwitcher";
 
 describe("LanguageSwitcher", () => {
-  it("should be render", () => {
-    const switcher = renderer.create(<LanguageSwitcher />);
-    const tree = switcher.toJSON();
-    expect(tree).toMatchSnapshot();
+  it("should be rendered", () => {
+    const { container } = render(<LanguageSwitcher />);
+    expect(container).toMatchSnapshot();
   });
   it("should have default value EN ", () => {
     const { getByText } = render(<LanguageSwitcher />);

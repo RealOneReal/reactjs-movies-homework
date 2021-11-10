@@ -1,29 +1,22 @@
-import renderer from "react-test-renderer";
+import { render } from "@testing-library/react";
 import MainPage from "../MainPage";
 import MainPageContainer from "../MainPageContainer";
 import CategoriesToggleButtons from "../../../components/CategoriesToggleButtons/CategoriesToggleButtons";
 import MoviesPagination from "../../../components/MoviesPagination/MoviesPagination";
-import DataFromTMBD from "../../../mock-data/mockMovies";
 
-jest.mock("../MainPageContainer", () => {
-  return "MainPageContainer";
-});
+jest.mock("../MainPageContainer", () => () => "MainPageContainer");
 jest.mock(
   "../../../components/CategoriesToggleButtons/CategoriesToggleButtons",
-  () => {
-    return "CategoriesToggleButtons";
-  }
+  () => () => "CategoriesToggleButtons"
 );
-jest.mock("../../../components/MoviesPagination/MoviesPagination", () => {
-  return "MoviesPaggination";
-});
-jest.mock("../../../mock-data/mockMovies", () => {
-  return { data: "mock data" };
-});
+jest.mock(
+  "../../../components/MoviesPagination/MoviesPagination",
+  () => () => "MoviesPaggination"
+);
 
 describe("MainPage", () => {
-  it("should be render", () => {
-    const tree = renderer.create(<MainPage />).toJSON();
-    expect(tree).toMatchSnapshot();
+  it("should be rendered", () => {
+    const { container } = render(<MainPage />);
+    expect(container).toMatchSnapshot();
   });
 });

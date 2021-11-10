@@ -1,14 +1,14 @@
-import renderer from "react-test-renderer";
+import { render } from "@testing-library/react";
 import MoviesPagination from "../MoviesPagination";
 
 const mockData = {
-  total_pages: 10,
+  totalPages: 10,
   page: 5,
 };
 
 describe("MoviesPagination", () => {
-  it("should be render", () => {
-    const tree = renderer.create(<MoviesPagination {...mockData} />).toJSON();
-    expect(tree).toMatchSnapshot();
+  it("should be rendered", () => {
+    const { container } = render(<MoviesPagination {...mockData} />);
+    expect(container).toMatchSnapshot();
   });
 });

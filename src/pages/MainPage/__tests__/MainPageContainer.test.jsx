@@ -1,20 +1,15 @@
-import renderer from "react-test-renderer";
+import { render } from "@testing-library/react";
 import MainPageContainer from "../MainPageContainer";
 import MovieCardList from "../../../components/MovieCardList/MovieCardList";
-import DataFromTMBd from "../../../mock-data/mockMovies";
 
-jest.mock("../../../components/MovieCardList/MovieCardList", () => {
-  return "MovieCardList";
-});
-jest.mock("../../../mock-data/mockMovies", () => {
-  return {
-    films: "Titanic,Batman,Brat 2",
-  };
-});
+jest.mock(
+  "../../../components/MovieCardList/MovieCardList",
+  () => () => "MovieCardList"
+);
 
 describe("MainPageContainer", () => {
-  it("should be render", () => {
-    const tree = renderer.create(<MainPageContainer />).toJSON();
-    expect(tree).toMatchSnapshot();
+  it("should be rendered", () => {
+    const { container } = render(<MainPageContainer />);
+    expect(container).toMatchSnapshot();
   });
 });

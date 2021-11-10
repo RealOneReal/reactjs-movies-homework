@@ -1,18 +1,16 @@
 import { truncateString } from "../stringUtils";
 
-const mockData = {
-  string: "Testing string,Testing string,Testing string ",
-  number: 20,
-  shortString: "Hello",
-};
+const mockString = "Testing string,Testing string,Testing string ";
+const mockNumber = 20;
+const mockShortString = "Hello";
 
 describe("truncateString", () => {
   it("should truncate string to specified number", () => {
-    const result = truncateString(mockData.string, mockData.number);
-    expect(result.length).toBe(20);
+    const result = truncateString(mockString, mockNumber);
+    expect(result.length).toBe(mockNumber);
   });
   it("should return default string if length < number", () => {
-    const result = truncateString(mockData.shortString, mockData.number);
-    expect(result).toBe(mockData.shortString);
+    const result = truncateString(mockShortString, mockNumber);
+    expect(result).toBe(mockShortString);
   });
 });

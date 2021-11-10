@@ -1,15 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[` should be render 1`] = `
-<MovieCardList
-  results={
-    Array [
-      "Leo",
-      "Kate",
-      "Mishka",
-      "Peter",
-      "Michael",
-    ]
-  }
-/>
+exports[`MoviesRecommendations should be rendered 1`] = `
+<div>
+  MovieCardList
+</div>
 `;

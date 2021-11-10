@@ -1,9 +1,9 @@
-import renderer from "react-test-renderer";
+import { render } from "@testing-library/react";
 import PostersContainer from "../PostersContainer";
 
 describe("PostersContainer", () => {
-  it("should be render", () => {
-    const tree = renderer.create(<PostersContainer />).toJSON();
-    expect(tree).toMatchSnapshot();
+  it("should be rendered", () => {
+    const { container } = render(<PostersContainer />);
+    expect(container).toMatchSnapshot();
   });
 });

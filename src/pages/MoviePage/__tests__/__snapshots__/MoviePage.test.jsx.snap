@@ -1,115 +1,117 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`MoviePage should be render 1`] = `
-<div
-  className="MuiBox-root css-4ozt90"
->
+exports[`MoviePage should be rendered 1`] = `
+<div>
   <div
-    className="MuiContainer-root MuiContainer-maxWidthLg css-r5r38p-MuiContainer-root"
+    class="MuiBox-root css-4ozt90"
   >
     <div
-      className="main-section MuiBox-root css-n0klh3"
+      class="MuiContainer-root MuiContainer-maxWidthLg css-r5r38p-MuiContainer-root"
     >
       <div
-        className="main-section_movie MuiBox-root css-0"
+        class="main-section MuiBox-root css-n0klh3"
       >
         <div
-          className="MuiBox-root css-ta6stj"
+          class="main-section_movie MuiBox-root css-0"
         >
           <div
-            className="MuiTypography-root MuiTypography-h6 css-8c5bzc-MuiTypography-root"
+            class="MuiBox-root css-gittgl"
           >
-            7.9
+            <div
+              class="MuiTypography-root MuiTypography-h6 css-8c5bzc-MuiTypography-root"
+            >
+              5
+            </div>
           </div>
+        </div>
+        <div
+          class="main-section_movie-items MuiBox-root css-0"
+        >
+          <h6
+            class="MuiTypography-root MuiTypography-subtitle2 css-ati914-MuiTypography-root"
+          >
+            Title:
+          </h6>
+          <h3
+            class="MuiTypography-root MuiTypography-h3 css-gepadz-MuiTypography-root"
+          >
+            Matrix
+          </h3>
+          <h6
+            class="MuiTypography-root MuiTypography-subtitle2 css-ati914-MuiTypography-root"
+          >
+            Overview:
+          </h6>
+          <p
+            class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+          >
+            nice movie
+          </p>
+          <h6
+            class="MuiTypography-root MuiTypography-subtitle2 css-ati914-MuiTypography-root"
+          >
+            Release date:
+          </h6>
+          <p
+            class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+          >
+            18.02.1998
+          </p>
+          <h6
+            class="MuiTypography-root MuiTypography-subtitle2 css-ati914-MuiTypography-root"
+          >
+            Revenue:
+          </h6>
+          <p
+            class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+          >
+            $ 1.000.000
+          </p>
+          <h6
+            class="MuiTypography-root MuiTypography-subtitle2 css-ati914-MuiTypography-root"
+          >
+            Duration:
+          </h6>
+          <p
+            class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+          >
+            5:0
+          </p>
+          <h6
+            class="MuiTypography-root MuiTypography-subtitle2 css-ati914-MuiTypography-root"
+          >
+            Genres:
+          </h6>
+          <p
+            class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+          >
+            comedy 
+            action 
+          </p>
+          <h6
+            class="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+          >
+            Top Billed Cast:
+          </h6>
+          ActorCardContainer
+          <h6
+            class="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+          >
+            Images:
+          </h6>
+          PostersContainer
         </div>
       </div>
       <div
-        className="main-section_movie-items MuiBox-root css-0"
+        class="recommendations MuiBox-root css-0"
       >
-        <h6
-          className="MuiTypography-root MuiTypography-subtitle2 css-ati914-MuiTypography-root"
+        <h5
+          class="MuiTypography-root MuiTypography-h5 css-1jo76pw-MuiTypography-root"
         >
-          Title:
-        </h6>
-        <h3
-          className="MuiTypography-root MuiTypography-h3 css-gepadz-MuiTypography-root"
-        >
-          Titanic
-        </h3>
-        <h6
-          className="MuiTypography-root MuiTypography-subtitle2 css-ati914-MuiTypography-root"
-        >
-          Overview:
-        </h6>
-        <p
-          className="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
-        >
-          101-year-old Rose DeWitt Bukater tells the story of her life aboard the Titanic, 84 years later. A young Rose boards the ship with her mother and fiancé. Meanwhile, Jack Dawson and Fabrizio De Rossi win third-class tickets aboard the ship. Rose tells the whole story from Titanic's departure through to its death—on its first and last voyage—on April 15, 1912.
-        </p>
-        <h6
-          className="MuiTypography-root MuiTypography-subtitle2 css-ati914-MuiTypography-root"
-        >
-          Release date:
-        </h6>
-        <p
-          className="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
-        >
-          1997-11-18
-        </p>
-        <h6
-          className="MuiTypography-root MuiTypography-subtitle2 css-ati914-MuiTypography-root"
-        >
-          Revenue:
-        </h6>
-        <p
-          className="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
-        >
-          $ 2187463944
-        </p>
-        <h6
-          className="MuiTypography-root MuiTypography-subtitle2 css-ati914-MuiTypography-root"
-        >
-          Duration:
-        </h6>
-        <p
-          className="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
-        >
-          3:14
-        </p>
-        <h6
-          className="MuiTypography-root MuiTypography-subtitle2 css-ati914-MuiTypography-root"
-        >
-          Genres:
-        </h6>
-        <p
-          className="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
-        >
-          Drama 
-          Romance 
-        </p>
-        <h6
-          className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
-        >
-          Top Billed Cast:
-        </h6>
-        <ActorCardContainer />
-        <h6
-          className="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
-        >
-          Images:
-        </h6>
-        <PostersContainer />
+          RECOMMENDATIONS :
+        </h5>
+        MoviesRecommendations
       </div>
-    </div>
-    <div
-      className="recommendations MuiBox-root css-0"
-    >
-      <h5
-        className="MuiTypography-root MuiTypography-h5 css-1jo76pw-MuiTypography-root"
-      >
-        RECOMMENDATIONS :
-      </h5>
-      <MoviesRecommendations />
     </div>
   </div>
 </div>
