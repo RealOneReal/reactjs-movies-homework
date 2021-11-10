@@ -1,9 +1,9 @@
 import { Card, CardMedia, CardContent, Typography } from "@mui/material";
 import styles from "./styles";
 import { truncateString } from "../../utils/stringUtils";
-import Fallback from "../../assets/broken-image.png";
+import fallback from "../../assets/broken-image.png";
 
-const ActorCard = ({ id, profile_path, name, character }) => {
+const ActorCard = ({ id, profilePath, name, character }) => {
   const actorName = truncateString(name, 19);
   const characterName = truncateString(character, 19);
 
@@ -13,7 +13,7 @@ const ActorCard = ({ id, profile_path, name, character }) => {
 
   const handleMediaFallback = (event) => {
     event.target.style.objectFit = "contain";
-    return (event.target.src = Fallback);
+    return (event.target.src = fallback);
   };
 
   return (
@@ -21,7 +21,7 @@ const ActorCard = ({ id, profile_path, name, character }) => {
       <CardMedia
         component="img"
         alt={actorName}
-        src={profile_path}
+        src={profilePath}
         sx={styles.cardMedia}
         onError={handleMediaFallback}
       />

@@ -5,7 +5,7 @@ import { truncateString } from "../../../utils/stringUtils";
 
 const mockData = {
   id: 123,
-  profile_path: "/123",
+  profilePath: "/123",
   name: "Michael Nordman",
   character: "Dude George",
 };
