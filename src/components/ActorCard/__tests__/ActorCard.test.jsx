@@ -11,7 +11,10 @@ const mockData = {
 };
 
 jest.spyOn(window.console, "log");
-jest.mock("../../../utils/stringUtils");
+jest.mock("../../../utils/stringUtils", () => ({
+  __esModule: true,
+  truncateString: jest.fn(),
+}));
 beforeEach(() => {
   truncateString
     .mockReturnValueOnce(mockData.name)

@@ -10,7 +10,10 @@ const mockData = {
   voteAverage: 9,
 };
 jest.spyOn(window.console, "log");
-jest.mock("../../../utils/stringUtils");
+jest.mock("../../../utils/stringUtils", () => ({
+  __esModule: true,
+  truncateString: jest.fn(),
+}));
 
 beforeEach(() => {
   truncateString
