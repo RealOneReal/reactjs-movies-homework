@@ -1,11 +1,13 @@
-import { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { ToggleButtonGroup, ToggleButton } from "@mui/material";
+import { moviesCategorie } from "../../redux/search/searchSlice";
 
 const CategoriesToggleButtons = () => {
-  const [categorie, setCategorie] = useState("popular");
+  const dispatch = useDispatch();
+  const categorie = useSelector((state) => state.search.moviesCategorie);
 
   const handleChangeCategorie = ({ target }) => {
-    setCategorie(target.value);
+    dispatch(moviesCategorie(target.value));
   };
 
   const styles = {
