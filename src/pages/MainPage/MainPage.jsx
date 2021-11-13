@@ -15,7 +15,7 @@ const MainPage = () => {
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            padding: " 1rem 0",
+            padding: " 16px 0",
           }}
         >
           <MoviesPagination {...DataFromTMDB}></MoviesPagination>

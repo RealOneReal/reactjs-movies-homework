@@ -4,11 +4,12 @@ import ActorCard from "../ActorCard/ActorCard";
 const ActorCardList = ({ cast }) => {
   return (
     <Grid container spacing={3}>
-      {cast.map((card) => (
-        <Grid item key={card.id}>
-          <ActorCard {...card} />
-        </Grid>
-      ))}
+      {cast &&
+        cast.map((card) => (
+          <Grid item key={card.id}>
+            <ActorCard {...card} />
+          </Grid>
+        ))}
     </Grid>
   );
 };

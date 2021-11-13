@@ -5,7 +5,7 @@ const mockComponent = <div data-testid="test">Hello</div>;
 const MockErrorComponent = () => {
   throw Error("Boom!");
 };
-// window.console = { error: jest.fn() };
+jest.spyOn(window.console, "error");
 
 describe("ErrorBoundary", () => {
   it("should render children component without error", () => {
@@ -20,7 +20,7 @@ describe("ErrorBoundary", () => {
         <MockErrorComponent />
       </ErrorBoundary>
     );
-
+    expect(console.error).toBeCalled();
     expect(container).toMatchSnapshot();
   });
 });
