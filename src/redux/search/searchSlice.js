@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { API_PARAMS } from "../../api/moviesAPI";
+import { API_MOVIES } from "../../api/moviesAPI";
 
 export const searchSlice = createSlice({
   name: "search",
@@ -7,7 +7,7 @@ export const searchSlice = createSlice({
     value: "",
     pageNumber: 1,
     language: "EN",
-    moviesCategorie: API_PARAMS.POPULAR,
+    moviesCategorie: API_MOVIES.POPULAR,
   },
   reducers: {
     inputSearch: (state, action) => {
@@ -22,6 +22,22 @@ export const searchSlice = createSlice({
     moviesCategorie: (state, action) => {
       state.moviesCategorie = action.payload;
     },
+    // newCat: {
+    //   prepare(title, content) {
+    //     return {
+    //       payload: {
+    //         id,
+    //         title,
+    //         content,
+    //       },
+    //     };
+    //   },
+    //   reducer(state, action) {
+    //     state.language = action.payload.content;
+    //     state.value = action.payload.id;
+    //     state.pageNumber = action.payload.content;
+    //   },
+    // },
   },
 });
 export const { moviesCategorie } = searchSlice.actions;

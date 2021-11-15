@@ -1,6 +1,9 @@
 import { useDispatch, useSelector } from "react-redux";
 import { ToggleButtonGroup, ToggleButton } from "@mui/material";
 import { moviesCategorie } from "../../redux/search/searchSlice";
+import { fetchMoviesByCategory } from "../../redux/movies/moviesSlice";
+import { useEffect } from "react";
+import { API_MOVIES } from "../../api/moviesAPI";
 
 const CategoriesToggleButtons = () => {
   const dispatch = useDispatch();
@@ -24,6 +27,10 @@ const CategoriesToggleButtons = () => {
     },
   };
 
+  useEffect(() => {
+    dispatch(fetchMoviesByCategory(categorie));
+  }, [dispatch, categorie]);
+
   return (
     <ToggleButtonGroup
       value={categorie}
@@ -32,13 +39,13 @@ const CategoriesToggleButtons = () => {
       exclusive
       sx={styles.group}
     >
-      <ToggleButton value="popular" sx={styles.button}>
+      <ToggleButton value={API_MOVIES.POPULAR} sx={styles.button}>
         Popular
       </ToggleButton>
-      <ToggleButton value="top_rated" sx={styles.button}>
+      <ToggleButton value={API_MOVIES.TOP_RATED} sx={styles.button}>
         Top rated
       </ToggleButton>
-      <ToggleButton value="upcoming" sx={styles.button}>
+      <ToggleButton value={API_MOVIES.UPCOMING} sx={styles.button}>
         Upcoming
       </ToggleButton>
     </ToggleButtonGroup>
