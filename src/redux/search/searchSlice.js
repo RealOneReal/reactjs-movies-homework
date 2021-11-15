@@ -40,6 +40,6 @@ export const searchSlice = createSlice({
     // },
   },
 });
-export const { moviesCategorie } = searchSlice.actions;
+export const { moviesCategorie, pageNumber } = searchSlice.actions;
 
 export default searchSlice.reducer;

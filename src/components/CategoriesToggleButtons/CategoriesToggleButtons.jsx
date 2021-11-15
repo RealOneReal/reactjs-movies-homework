@@ -8,6 +8,7 @@ import { API_MOVIES } from "../../api/moviesAPI";
 const CategoriesToggleButtons = () => {
   const dispatch = useDispatch();
   const categorie = useSelector((state) => state.search.moviesCategorie);
+  const page = useSelector((state) => state.search.pageNumber);
 
   const handleChangeCategorie = ({ target }) => {
     dispatch(moviesCategorie(target.value));
@@ -28,8 +29,8 @@ const CategoriesToggleButtons = () => {
   };
 
   useEffect(() => {
-    dispatch(fetchMoviesByCategory(categorie));
-  }, [dispatch, categorie]);
+    dispatch(fetchMoviesByCategory({ categorie: categorie, pageNumber: page }));
+  }, [categorie, dispatch, page]);
 
   return (
     <ToggleButtonGroup

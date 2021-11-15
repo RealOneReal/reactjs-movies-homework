@@ -12,7 +12,12 @@ const MovieCard = ({
   id,
 }) => {
   const title = truncateString(originalTitle, 19);
+<<<<<<< HEAD
   const genres = truncateString(genreIds.join(" "), 26);
+=======
+
+  // const genres = truncateString(genreIds?.length && genreIds.join(" "), 26);
+>>>>>>> ba6940e (add: redux for paggination adn toggleButtons)
 
   const handleClick = () => {
     console.log(id);
@@ -47,7 +52,7 @@ const MovieCard = ({
             sx={styles.genres}
             color="primary.dark"
           >
-            {genres}
+            {genreIds}
           </Typography>
         </CardContent>
       </Card>

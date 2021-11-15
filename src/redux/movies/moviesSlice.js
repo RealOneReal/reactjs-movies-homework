@@ -4,20 +4,38 @@ import { API_MOVIES } from "../../api/moviesAPI";
 
 export const fetchMoviesByCategory = createAsyncThunk(
   "movies/fetchMoviesByCategory",
-  async (categorie) => {
-    const data = await axios.get(
-      `${API_MOVIES.BASE_URL}${categorie}${API_MOVIES.API_KEY}`
+  async ({ categorie, pageNumber }) => {
+    const response = await axios.get(
+      `${API_MOVIES.BASE_URL}${categorie}${API_MOVIES.API_KEY}&page=${pageNumber}`
     );
-    return data;
+    const responseData = {
+      ...response,
+      data: {
+        ...response.data,
+        results: response.data.results?.map((item) => {
+          return {
+            genreIds: item.genre_ids,
+            originalTitle: item.original_title,
+            posterPath: item.poster_path,
+            voteAverage: item.vote_average,
+            id: item.id,
+          };
+        }),
+      },
+    };
+
+    return responseData.data;
   }
 );
 
 export const moviesSlice = createSlice({
   name: "movies",
   initialState: {
-    movies: {},
+    movies: [],
     status: "idle",
     error: null,
+    totalPages: 0,
+    pageNumber: 1,
     // images: {},
   },
   reducers: {},
@@ -28,7 +46,9 @@ export const moviesSlice = createSlice({
       })
       .addCase(fetchMoviesByCategory.fulfilled, (state, action) => {
         state.status = "success";
-        state.movies = action.payload?.data;
+        state.movies = action.payload.results;
+        state.pageNumber = action.payload.page;
+        state.totalPages = action.payload.total_pages;
       })
       .addCase(fetchMoviesByCategory.rejected, (state, action) => {
         state.status = "failure";
@@ -36,5 +56,5 @@ export const moviesSlice = createSlice({
       });
   },
 });
-
+export {};
 export default moviesSlice.reducer;

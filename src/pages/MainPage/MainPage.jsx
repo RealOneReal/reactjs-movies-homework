@@ -2,9 +2,10 @@ import { Box, Container } from "@mui/material";
 import MainPageMovieCardList from "./MainPageMovieCardList";
 import MoviesPagination from "../../components/MoviesPagination/MoviesPagination";
 import CategoriesToggleButtons from "../../components/CategoriesToggleButtons/CategoriesToggleButtons";
-import DataFromTMDB from "../../mock-data/mockMovies";
 
 const MainPage = () => {
+  const { totalPages } = useSelector((state) => state.movies);
+  const { pageNumber } = useSelector((state) => state.search);
   return (
     <Box sx={{ backgroundColor: "secondary.dark" }}>
       <Container maxWidth="lg" sx={{ pt: 2 }}>
@@ -18,7 +19,7 @@ const MainPage = () => {
             padding: " 16px 0",
           }}
         >
-          <MoviesPagination {...DataFromTMDB}></MoviesPagination>
+          <MoviesPagination pageNumber={pageNumber} totalPages={totalPages} />
         </Box>
       </Container>
     </Box>
