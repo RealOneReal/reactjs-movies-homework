@@ -10,6 +10,7 @@ const CategoriesToggleButtons = () => {
   const categorie = useSelector((state) => state.search.moviesCategorie);
   const page = useSelector((state) => state.movies.pageNumber);
   const language = useSelector((state) => state.search.language);
+
   const handleChangeCategorie = ({ target }) => {
     dispatch(moviesCategorie(target.value));
   };

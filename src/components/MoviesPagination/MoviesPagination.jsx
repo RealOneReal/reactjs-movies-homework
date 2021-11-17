@@ -7,7 +7,6 @@ const MoviesPagination = () => {
   const dispatch = useDispatch();
   const pageNumberActionCreator = moviesSlice.actions.pageNumber;
   const { totalPages, pageNumber } = useSelector((state) => state.movies);
-  console.log("totalpages:", totalPages, "pageNumber:", pageNumber);
   const handleClick = ({ target }) => {
     dispatch(pageNumberActionCreator(+target.textContent));
   };

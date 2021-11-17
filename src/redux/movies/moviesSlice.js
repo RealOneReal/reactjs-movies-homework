@@ -1,6 +1,7 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 import { API_MOVIES } from "../../api/moviesAPI";
+import { renameKeysOfFetchingMovies } from "../../utils/objectUtils";
 
 export const fetchMoviesByCategory = createAsyncThunk(
   "movies/fetchMoviesByCategory",
@@ -8,30 +9,19 @@ export const fetchMoviesByCategory = createAsyncThunk(
     const response = await axios.get(
       `${API_MOVIES.BASE_URL}${categorie}${API_MOVIES.API_KEY}&language=${language}&page=${pageNumber}`
     );
-    const responseData = {
-      ...response,
-      data: {
-        ...response.data,
-        results: response.data.results?.map((item) => {
-          return {
-            genreIds: item.genre_ids,
-            originalTitle: item.original_title,
-            posterPath: item.poster_path,
-            voteAverage: item.vote_average,
-            id: item.id,
-          };
-        }),
-      },
-    };
-
-    return responseData.data;
+    return renameKeysOfFetchingMovies(response);
   }
 );
 
-// export const fetchMoviesBySearch = createAsyncThunk(
-//   "movies/fetchMoviesBySearch",
-//   async()
-// );
+export const fetchMoviesBySearch = createAsyncThunk(
+  "movies/fetchMoviesBySearch",
+  async ({ pageNumber, language, value }) => {
+    const response = await axios.get(
+      `${API_MOVIES.BASE_URL}search/movie${API_MOVIES.API_KEY}&language=${language}&page=${pageNumber}&query=${value}`
+    );
+    return renameKeysOfFetchingMovies(response);
+  }
+);
 
 export const moviesSlice = createSlice({
   name: "movies",
@@ -41,7 +31,7 @@ export const moviesSlice = createSlice({
     error: null,
     totalPages: 0,
     pageNumber: 1,
-    // images: {},
+    images: {},
   },
   reducers: {
     pageNumber: (state, action) => {
@@ -60,6 +50,19 @@ export const moviesSlice = createSlice({
         state.totalPages = action.payload.total_pages;
       })
       .addCase(fetchMoviesByCategory.rejected, (state, action) => {
+        state.status = "failure";
+        state.error = action.error.message;
+      })
+      .addCase(fetchMoviesBySearch.pending, (state) => {
+        state.status = "loading";
+      })
+      .addCase(fetchMoviesBySearch.fulfilled, (state, action) => {
+        state.status = "success";
+        state.movies = action.payload.results;
+        state.pageNumber = action.payload.page;
+        state.totalPages = action.payload.total_pages;
+      })
+      .addCase(fetchMoviesBySearch.rejected, (state, action) => {
         state.status = "failure";
         state.error = action.error.message;
       });
