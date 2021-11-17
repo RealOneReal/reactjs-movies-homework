@@ -4,9 +4,9 @@ import { API_MOVIES } from "../../api/moviesAPI";
 
 export const fetchMoviesByCategory = createAsyncThunk(
   "movies/fetchMoviesByCategory",
-  async ({ categorie, pageNumber }) => {
+  async ({ categorie, pageNumber, language }) => {
     const response = await axios.get(
-      `${API_MOVIES.BASE_URL}${categorie}${API_MOVIES.API_KEY}&page=${pageNumber}`
+      `${API_MOVIES.BASE_URL}${categorie}${API_MOVIES.API_KEY}&language=${language}&page=${pageNumber}`
     );
     const responseData = {
       ...response,
@@ -28,6 +28,11 @@ export const fetchMoviesByCategory = createAsyncThunk(
   }
 );
 
+// export const fetchMoviesBySearch = createAsyncThunk(
+//   "movies/fetchMoviesBySearch",
+//   async()
+// );
+
 export const moviesSlice = createSlice({
   name: "movies",
   initialState: {
@@ -38,7 +43,11 @@ export const moviesSlice = createSlice({
     pageNumber: 1,
     // images: {},
   },
-  reducers: {},
+  reducers: {
+    pageNumber: (state, action) => {
+      state.pageNumber = action.payload;
+    },
+  },
   extraReducers: (builder) => {
     builder
       .addCase(fetchMoviesByCategory.pending, (state) => {
@@ -56,5 +65,5 @@ export const moviesSlice = createSlice({
       });
   },
 });
-export {};
+
 export default moviesSlice.reducer;

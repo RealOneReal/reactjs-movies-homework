@@ -1,18 +1,21 @@
 import { Pagination, PaginationItem } from "@mui/material";
-import { useDispatch } from "react-redux";
-import { pageNumber } from "../../redux/search/searchSlice";
+import { useDispatch, useSelector } from "react-redux";
 
-const MoviesPagination = ({ totalPages, page }) => {
+import { moviesSlice } from "../../redux/movies/moviesSlice";
+
+const MoviesPagination = () => {
   const dispatch = useDispatch();
-
+  const pageNumberActionCreator = moviesSlice.actions.pageNumber;
+  const { totalPages, pageNumber } = useSelector((state) => state.movies);
+  console.log("totalpages:", totalPages, "pageNumber:", pageNumber);
   const handleClick = ({ target }) => {
-    dispatch(pageNumber(+target.textContent));
+    dispatch(pageNumberActionCreator(+target.textContent));
   };
 
   return (
     <Pagination
       count={totalPages}
-      page={page}
+      page={pageNumber}
       hideNextButton={true}
       hidePrevButton={true}
       color="primary"

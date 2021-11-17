@@ -14,7 +14,6 @@ const API_MOVIES = {
   UPCOMING: "movie/upcoming",
   TOP_RATED: "movie/top_rated",
   POPULAR: "movie/popular",
-  LANGUAGE: "language=",
 };
 
 export { API_MOVIES };

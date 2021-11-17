@@ -4,8 +4,6 @@ import MoviesPagination from "../../components/MoviesPagination/MoviesPagination
 import CategoriesToggleButtons from "../../components/CategoriesToggleButtons/CategoriesToggleButtons";
 
 const MainPage = () => {
-  const { totalPages } = useSelector((state) => state.movies);
-  const { pageNumber } = useSelector((state) => state.search);
   return (
     <Box sx={{ backgroundColor: "secondary.dark" }}>
       <Container maxWidth="lg" sx={{ pt: 2 }}>
@@ -19,7 +17,7 @@ const MainPage = () => {
             padding: " 16px 0",
           }}
         >
-          <MoviesPagination pageNumber={pageNumber} totalPages={totalPages} />
+          <MoviesPagination />
         </Box>
       </Container>
     </Box>
