@@ -5,7 +5,7 @@ export const searchSlice = createSlice({
   name: "search",
   initialState: {
     value: "",
-    language: "EN",
+    language: "en",
     moviesCategorie: API_MOVIES.POPULAR,
   },
   reducers: {

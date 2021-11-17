@@ -5,7 +5,12 @@ import CategoriesToggleButtons from "../../components/CategoriesToggleButtons/Ca
 
 const MainPage = () => {
   return (
-    <Box sx={{ backgroundColor: "secondary.dark" }}>
+    <Box
+      sx={{
+        backgroundColor: "secondary.dark",
+        minHeight: "calc(100vh - 80px)",
+      }}
+    >
       <Container maxWidth="lg" sx={{ pt: 2 }}>
         <CategoriesToggleButtons />
         <MainPageMovieCardList />

@@ -4,7 +4,7 @@ import { useDispatch } from "react-redux";
 import { language } from "../../redux/search/searchSlice";
 
 const LanguageSwitcher = () => {
-  const [languageFromInput, setLanguage] = useState("EN");
+  const [languageFromInput, setLanguage] = useState("en");
   const dispatch = useDispatch();
 
   const handleChange = ({ target }) => {
@@ -33,10 +33,10 @@ const LanguageSwitcher = () => {
         color="secondary"
         sx={styles.select}
       >
-        <MenuItem value="EN" sx={styles.menuItem}>
+        <MenuItem value="en" sx={styles.menuItem}>
           EN
         </MenuItem>
-        <MenuItem value="RU" sx={styles.menuItem}>
+        <MenuItem value="ru" sx={styles.menuItem}>
           RU
         </MenuItem>
       </Select>

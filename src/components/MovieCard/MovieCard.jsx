@@ -12,12 +12,7 @@ const MovieCard = ({
   id,
 }) => {
   const title = truncateString(originalTitle, 19);
-<<<<<<< HEAD
   const genres = truncateString(genreIds.join(" "), 26);
-=======
-
-  // const genres = truncateString(genreIds?.length && genreIds.join(" "), 26);
->>>>>>> ba6940e (add: redux for paggination adn toggleButtons)
 
   const handleClick = () => {
     console.log(id);
@@ -38,14 +33,14 @@ const MovieCard = ({
         </Box>
         <CardMedia
           component="img"
-          alt={title}
+          alt={movieTitle}
           src={posterPath}
           sx={styles.cardImage}
           onError={handleMediaFallback}
         />
         <CardContent sx={{ p: 1 }}>
           <Typography variant="h6" color="primary.light">
-            {title}
+            {movieTitle}
           </Typography>
           <Typography
             variant="subtitle2"
