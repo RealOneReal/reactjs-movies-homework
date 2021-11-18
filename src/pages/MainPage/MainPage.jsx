@@ -1,5 +1,5 @@
 import { Box, Container } from "@mui/material";
-import MainPageContainer from "./MainPageContainer";
+import MainPageMovieCardList from "./MainPageMovieCardList";
 import MoviesPagination from "../../components/MoviesPagination/MoviesPagination";
 import CategoriesToggleButtons from "../../components/CategoriesToggleButtons/CategoriesToggleButtons";
 import DataFromTMDB from "../../mock-data/mockMovies";
@@ -9,7 +9,7 @@ const MainPage = () => {
     <Box sx={{ backgroundColor: "secondary.dark" }}>
       <Container maxWidth="lg" sx={{ pt: 2 }}>
         <CategoriesToggleButtons />
-        <MainPageContainer />
+        <MainPageMovieCardList />
         <Box
           sx={{
             display: "flex",

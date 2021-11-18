@@ -110,7 +110,7 @@ exports[`MoviePage should be rendered 1`] = `
         >
           RECOMMENDATIONS :
         </h5>
-        MoviesRecommendations
+        MoviesPageMovieCardList
       </div>
     </div>
   </div>

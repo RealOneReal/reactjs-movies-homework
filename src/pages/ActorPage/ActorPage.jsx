@@ -1,6 +1,6 @@
 import { Box, Container, Typography } from "@mui/material";
 import PhotosContainer from "./PhotosContainer";
-import PlayInMovies from "./PlayInMovies";
+import ActorPageMovieCardList from "./ActorPageMovieCardList";
 
 const ActorPage = ({
   profilePath,
@@ -52,7 +52,7 @@ const ActorPage = ({
         </Box>
         <Box className="known-by">
           <Typography variant="h5"> KNOWN BY:</Typography>
-          <PlayInMovies></PlayInMovies>
+          <ActorPageMovieCardList />
         </Box>
       </Container>
     </Box>

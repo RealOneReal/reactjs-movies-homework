@@ -1,5 +1,5 @@
 import { Box, Container, Typography } from "@mui/material";
-import MoviesRecommendations from "./MoviesRecommendations";
+import MoviesPageMovieCardList from "./MoviePageMovieCardList";
 import PostersContainer from "./PostersContainer";
 import ActorCardList from "./ActorCardList";
 
@@ -83,7 +83,7 @@ const MoviePage = ({
           <Typography variant="h5" color="primary.dark">
             RECOMMENDATIONS :
           </Typography>
-          <MoviesRecommendations></MoviesRecommendations>
+          <MoviesPageMovieCardList />
         </Box>
       </Container>
     </Box>

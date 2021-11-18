@@ -1,7 +1,7 @@
 import { render } from "@testing-library/react";
 import ActorPage from "../ActorPage";
 import PhotosContainer from "../PhotosContainer";
-import PlayInMovies from "../PlayInMovies";
+import ActorPageMovieCardList from "../ActorPageMovieCardList";
 import { person } from "../../../mock-data/mockPersonDetails";
 
 jest.mock("../../../mock-data/mockPersonDetails", () => ({
@@ -15,7 +15,7 @@ jest.mock("../../../mock-data/mockPersonDetails", () => ({
 }));
 
 jest.mock("../PhotosContainer", () => () => "PhtosContainer");
-jest.mock("../PlayInMovies", () => () => "PlayInMovies");
+jest.mock("../ActorPageMovieCardList", () => () => "../ActorPageMovieCardList");
 
 describe("ActorPage", () => {
   it("should be rendered", () => {

@@ -1,10 +1,10 @@
 import { render } from "@testing-library/react";
 import MainPage from "../MainPage";
-import MainPageContainer from "../MainPageContainer";
+import MainPageMovieCardList from "../MainPageMovieCardList";
 import CategoriesToggleButtons from "../../../components/CategoriesToggleButtons/CategoriesToggleButtons";
 import MoviesPagination from "../../../components/MoviesPagination/MoviesPagination";
 
-jest.mock("../MainPageContainer", () => () => "MainPageContainer");
+jest.mock("../MainPageMovieCardList", () => () => "MainPageMovieCardList");
 jest.mock(
   "../../../components/CategoriesToggleButtons/CategoriesToggleButtons",
   () => () => "CategoriesToggleButtons"

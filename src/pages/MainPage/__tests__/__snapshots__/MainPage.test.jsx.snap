@@ -9,7 +9,7 @@ exports[`MainPage should be rendered 1`] = `
       class="MuiContainer-root MuiContainer-maxWidthLg css-r5r38p-MuiContainer-root"
     >
       CategoriesToggleButtons
-      MainPageContainer
+      MainPageMovieCardList
       <div
         class="MuiBox-root css-1mz5wf4"
       >

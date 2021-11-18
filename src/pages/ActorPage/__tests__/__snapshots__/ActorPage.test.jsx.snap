@@ -72,7 +72,7 @@ exports[`ActorPage should be rendered 1`] = `
         >
            KNOWN BY:
         </h5>
-        PlayInMovies
+        ../ActorPageMovieCardList
       </div>
     </div>
   </div>

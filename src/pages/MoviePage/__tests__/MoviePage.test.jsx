@@ -1,10 +1,10 @@
 import { render } from "@testing-library/react";
 import MoviePage from "../MoviePage";
-import MoviesRecommendations from "../MoviesRecommendations";
+import MoviesPageMovieCardList from "../MoviePageMovieCardList";
 import PostersContainer from "../PostersContainer";
 import ActorCardList from "../ActorCardList";
 
-jest.mock("../MoviesRecommendations", () => () => "MoviesRecommendations");
+jest.mock("../MoviePageMovieCardList", () => () => "MoviesPageMovieCardList");
 jest.mock("../PostersContainer", () => () => "PostersContainer");
 jest.mock("../ActorCardList", () => () => "ActorCardList");
 

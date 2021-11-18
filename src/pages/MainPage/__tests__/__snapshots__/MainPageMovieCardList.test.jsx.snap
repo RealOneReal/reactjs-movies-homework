@@ -1,0 +1,1110 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MainPageMovieCardList should be rendered 1`] = `
+<div>
+  <div
+    class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-1 css-exfl4s-MuiGrid-root"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+    >
+      <div
+        class="MuiBox-root css-1fxpa70"
+      >
+        <div
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1tm8ee0-MuiPaper-root-MuiCard-root"
+        >
+          <div
+            class="rating MuiBox-root css-10gsq3s"
+          >
+            <span
+              class="MuiTypography-root MuiTypography-subtitle1 css-10wpov9-MuiTypography-root"
+            >
+              7.2
+            </span>
+          </div>
+          <img
+            alt="Batman"
+            class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-gd1bgw-MuiCardMedia-root"
+            src="/posters/Batman.jpeg"
+          />
+          <div
+            class="MuiCardContent-root css-71xg00-MuiCardContent-root"
+          >
+            <h6
+              class="MuiTypography-root MuiTypography-h6 css-100kqv6-MuiTypography-root"
+            >
+              Batman
+            </h6>
+            <h6
+              class="MuiTypography-root MuiTypography-subtitle2 css-116y7rw-MuiTypography-root"
+            >
+              Fantasy Action
+            </h6>
+          </div>
+        </div>
+        <div
+          class="MuiBox-root css-lx8xrd"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-189a69h-MuiSvgIcon-root"
+            data-testid="PlayCircleIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM9.5 16.5v-9l7 4.5-7 4.5z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+    >
+      <div
+        class="MuiBox-root css-1fxpa70"
+      >
+        <div
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1tm8ee0-MuiPaper-root-MuiCard-root"
+        >
+          <div
+            class="rating MuiBox-root css-10gsq3s"
+          >
+            <span
+              class="MuiTypography-root MuiTypography-subtitle1 css-10wpov9-MuiTypography-root"
+            >
+              0
+            </span>
+          </div>
+          <img
+            alt="The Batman"
+            class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-gd1bgw-MuiCardMedia-root"
+            src="/posters/Batman.jpeg"
+          />
+          <div
+            class="MuiCardContent-root css-71xg00-MuiCardContent-root"
+          >
+            <h6
+              class="MuiTypography-root MuiTypography-h6 css-100kqv6-MuiTypography-root"
+            >
+              The Batman
+            </h6>
+            <h6
+              class="MuiTypography-root MuiTypography-subtitle2 css-116y7rw-MuiTypography-root"
+            >
+              Action Crime Drama
+            </h6>
+          </div>
+        </div>
+        <div
+          class="MuiBox-root css-lx8xrd"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-189a69h-MuiSvgIcon-root"
+            data-testid="PlayCircleIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM9.5 16.5v-9l7 4.5-7 4.5z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+    >
+      <div
+        class="MuiBox-root css-1fxpa70"
+      >
+        <div
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1tm8ee0-MuiPaper-root-MuiCard-root"
+        >
+          <div
+            class="rating MuiBox-root css-10gsq3s"
+          >
+            <span
+              class="MuiTypography-root MuiTypography-subtitle1 css-10wpov9-MuiTypography-root"
+            >
+              7.7
+            </span>
+          </div>
+          <img
+            alt="Batman Begins"
+            class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-gd1bgw-MuiCardMedia-root"
+            src="/posters/BatmanBegins.jpeg"
+          />
+          <div
+            class="MuiCardContent-root css-71xg00-MuiCardContent-root"
+          >
+            <h6
+              class="MuiTypography-root MuiTypography-h6 css-100kqv6-MuiTypography-root"
+            >
+              Batman Begins
+            </h6>
+            <h6
+              class="MuiTypography-root MuiTypography-subtitle2 css-116y7rw-MuiTypography-root"
+            >
+              Action Crime Drama
+            </h6>
+          </div>
+        </div>
+        <div
+          class="MuiBox-root css-lx8xrd"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-189a69h-MuiSvgIcon-root"
+            data-testid="PlayCircleIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM9.5 16.5v-9l7 4.5-7 4.5z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+    >
+      <div
+        class="MuiBox-root css-1fxpa70"
+      >
+        <div
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1tm8ee0-MuiPaper-root-MuiCard-root"
+        >
+          <div
+            class="rating MuiBox-root css-10gsq3s"
+          >
+            <span
+              class="MuiTypography-root MuiTypography-subtitle1 css-10wpov9-MuiTypography-root"
+            >
+              7.3
+            </span>
+          </div>
+          <img
+            alt="Batman: Death i ..."
+            class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-gd1bgw-MuiCardMedia-root"
+            src="/posters/BatmanDeathFamily.jpeg"
+          />
+          <div
+            class="MuiCardContent-root css-71xg00-MuiCardContent-root"
+          >
+            <h6
+              class="MuiTypography-root MuiTypography-h6 css-100kqv6-MuiTypography-root"
+            >
+              Batman: Death i ...
+            </h6>
+            <h6
+              class="MuiTypography-root MuiTypography-subtitle2 css-116y7rw-MuiTypography-root"
+            >
+              Animation Action
+            </h6>
+          </div>
+        </div>
+        <div
+          class="MuiBox-root css-lx8xrd"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-189a69h-MuiSvgIcon-root"
+            data-testid="PlayCircleIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM9.5 16.5v-9l7 4.5-7 4.5z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+    >
+      <div
+        class="MuiBox-root css-1fxpa70"
+      >
+        <div
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1tm8ee0-MuiPaper-root-MuiCard-root"
+        >
+          <div
+            class="rating MuiBox-root css-10gsq3s"
+          >
+            <span
+              class="MuiTypography-root MuiTypography-subtitle1 css-10wpov9-MuiTypography-root"
+            >
+              7.3
+            </span>
+          </div>
+          <img
+            alt="Batman: Hush"
+            class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-gd1bgw-MuiCardMedia-root"
+            src="/posters/BatmanHush.jpeg"
+          />
+          <div
+            class="MuiCardContent-root css-71xg00-MuiCardContent-root"
+          >
+            <h6
+              class="MuiTypography-root MuiTypography-h6 css-100kqv6-MuiTypography-root"
+            >
+              Batman: Hush
+            </h6>
+            <h6
+              class="MuiTypography-root MuiTypography-subtitle2 css-116y7rw-MuiTypography-root"
+            >
+              Science Fiction Crime  ...
+            </h6>
+          </div>
+        </div>
+        <div
+          class="MuiBox-root css-lx8xrd"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-189a69h-MuiSvgIcon-root"
+            data-testid="PlayCircleIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM9.5 16.5v-9l7 4.5-7 4.5z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+    >
+      <div
+        class="MuiBox-root css-1fxpa70"
+      >
+        <div
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1tm8ee0-MuiPaper-root-MuiCard-root"
+        >
+          <div
+            class="rating MuiBox-root css-10gsq3s"
+          >
+            <span
+              class="MuiTypography-root MuiTypography-subtitle1 css-10wpov9-MuiTypography-root"
+            >
+              7.7
+            </span>
+          </div>
+          <img
+            alt="Batman: The Lon ..."
+            class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-gd1bgw-MuiCardMedia-root"
+            src="/posters/BatmanHush.jpeg"
+          />
+          <div
+            class="MuiCardContent-root css-71xg00-MuiCardContent-root"
+          >
+            <h6
+              class="MuiTypography-root MuiTypography-h6 css-100kqv6-MuiTypography-root"
+            >
+              Batman: The Lon ...
+            </h6>
+            <h6
+              class="MuiTypography-root MuiTypography-subtitle2 css-116y7rw-MuiTypography-root"
+            >
+              Animation Mystery Acti ...
+            </h6>
+          </div>
+        </div>
+        <div
+          class="MuiBox-root css-lx8xrd"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-189a69h-MuiSvgIcon-root"
+            data-testid="PlayCircleIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM9.5 16.5v-9l7 4.5-7 4.5z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+    >
+      <div
+        class="MuiBox-root css-1fxpa70"
+      >
+        <div
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1tm8ee0-MuiPaper-root-MuiCard-root"
+        >
+          <div
+            class="rating MuiBox-root css-10gsq3s"
+          >
+            <span
+              class="MuiTypography-root MuiTypography-subtitle1 css-10wpov9-MuiTypography-root"
+            >
+              6.8
+            </span>
+          </div>
+          <img
+            alt="Batman Returns"
+            class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-gd1bgw-MuiCardMedia-root"
+            src="/posters/Batman.jpeg"
+          />
+          <div
+            class="MuiCardContent-root css-71xg00-MuiCardContent-root"
+          >
+            <h6
+              class="MuiTypography-root MuiTypography-h6 css-100kqv6-MuiTypography-root"
+            >
+              Batman Returns
+            </h6>
+            <h6
+              class="MuiTypography-root MuiTypography-subtitle2 css-116y7rw-MuiTypography-root"
+            >
+              Action Fantasy
+            </h6>
+          </div>
+        </div>
+        <div
+          class="MuiBox-root css-lx8xrd"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-189a69h-MuiSvgIcon-root"
+            data-testid="PlayCircleIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM9.5 16.5v-9l7 4.5-7 4.5z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+    >
+      <div
+        class="MuiBox-root css-1fxpa70"
+      >
+        <div
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1tm8ee0-MuiPaper-root-MuiCard-root"
+        >
+          <div
+            class="rating MuiBox-root css-10gsq3s"
+          >
+            <span
+              class="MuiTypography-root MuiTypography-subtitle1 css-10wpov9-MuiTypography-root"
+            >
+              7.2
+            </span>
+          </div>
+          <img
+            alt="Batman vs. Robin"
+            class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-gd1bgw-MuiCardMedia-root"
+            src="/posters/BatmanDeathFamily.jpeg"
+          />
+          <div
+            class="MuiCardContent-root css-71xg00-MuiCardContent-root"
+          >
+            <h6
+              class="MuiTypography-root MuiTypography-h6 css-100kqv6-MuiTypography-root"
+            >
+              Batman vs. Robin
+            </h6>
+            <h6
+              class="MuiTypography-root MuiTypography-subtitle2 css-116y7rw-MuiTypography-root"
+            >
+              Science Fiction Action ...
+            </h6>
+          </div>
+        </div>
+        <div
+          class="MuiBox-root css-lx8xrd"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-189a69h-MuiSvgIcon-root"
+            data-testid="PlayCircleIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM9.5 16.5v-9l7 4.5-7 4.5z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+    >
+      <div
+        class="MuiBox-root css-1fxpa70"
+      >
+        <div
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1tm8ee0-MuiPaper-root-MuiCard-root"
+        >
+          <div
+            class="rating MuiBox-root css-10gsq3s"
+          >
+            <span
+              class="MuiTypography-root MuiTypography-subtitle1 css-10wpov9-MuiTypography-root"
+            >
+              7.9
+            </span>
+          </div>
+          <img
+            alt="Batman: The Lon ..."
+            class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-gd1bgw-MuiCardMedia-root"
+            src="/posters/BatmanHush.jpeg"
+          />
+          <div
+            class="MuiCardContent-root css-71xg00-MuiCardContent-root"
+          >
+            <h6
+              class="MuiTypography-root MuiTypography-h6 css-100kqv6-MuiTypography-root"
+            >
+              Batman: The Lon ...
+            </h6>
+            <h6
+              class="MuiTypography-root MuiTypography-subtitle2 css-116y7rw-MuiTypography-root"
+            >
+              Animation Mystery Acti ...
+            </h6>
+          </div>
+        </div>
+        <div
+          class="MuiBox-root css-lx8xrd"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-189a69h-MuiSvgIcon-root"
+            data-testid="PlayCircleIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM9.5 16.5v-9l7 4.5-7 4.5z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+    >
+      <div
+        class="MuiBox-root css-1fxpa70"
+      >
+        <div
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1tm8ee0-MuiPaper-root-MuiCard-root"
+        >
+          <div
+            class="rating MuiBox-root css-10gsq3s"
+          >
+            <span
+              class="MuiTypography-root MuiTypography-subtitle1 css-10wpov9-MuiTypography-root"
+            >
+              4.3
+            </span>
+          </div>
+          <img
+            alt="Batman & Robin"
+            class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-gd1bgw-MuiCardMedia-root"
+            src="/posters/Batman.jpeg"
+          />
+          <div
+            class="MuiCardContent-root css-71xg00-MuiCardContent-root"
+          >
+            <h6
+              class="MuiTypography-root MuiTypography-h6 css-100kqv6-MuiTypography-root"
+            >
+              Batman & Robin
+            </h6>
+            <h6
+              class="MuiTypography-root MuiTypography-subtitle2 css-116y7rw-MuiTypography-root"
+            >
+              Science Fiction Action ...
+            </h6>
+          </div>
+        </div>
+        <div
+          class="MuiBox-root css-lx8xrd"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-189a69h-MuiSvgIcon-root"
+            data-testid="PlayCircleIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM9.5 16.5v-9l7 4.5-7 4.5z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+    >
+      <div
+        class="MuiBox-root css-1fxpa70"
+      >
+        <div
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1tm8ee0-MuiPaper-root-MuiCard-root"
+        >
+          <div
+            class="rating MuiBox-root css-10gsq3s"
+          >
+            <span
+              class="MuiTypography-root MuiTypography-subtitle1 css-10wpov9-MuiTypography-root"
+            >
+              5.4
+            </span>
+          </div>
+          <img
+            alt="Batman Forever"
+            class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-gd1bgw-MuiCardMedia-root"
+            src="/mzzNBVwTiiY94xAXDMWJpNPW2US.jpg"
+          />
+          <div
+            class="MuiCardContent-root css-71xg00-MuiCardContent-root"
+          >
+            <h6
+              class="MuiTypography-root MuiTypography-h6 css-100kqv6-MuiTypography-root"
+            >
+              Batman Forever
+            </h6>
+            <h6
+              class="MuiTypography-root MuiTypography-subtitle2 css-116y7rw-MuiTypography-root"
+            >
+              Action Crime Fantasy
+            </h6>
+          </div>
+        </div>
+        <div
+          class="MuiBox-root css-lx8xrd"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-189a69h-MuiSvgIcon-root"
+            data-testid="PlayCircleIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM9.5 16.5v-9l7 4.5-7 4.5z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+    >
+      <div
+        class="MuiBox-root css-1fxpa70"
+      >
+        <div
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1tm8ee0-MuiPaper-root-MuiCard-root"
+        >
+          <div
+            class="rating MuiBox-root css-10gsq3s"
+          >
+            <span
+              class="MuiTypography-root MuiTypography-subtitle1 css-10wpov9-MuiTypography-root"
+            >
+              5.9
+            </span>
+          </div>
+          <img
+            alt="Batman v Superm ..."
+            class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-gd1bgw-MuiCardMedia-root"
+            src="/posters/BatmanDeathFamily.jpeg"
+          />
+          <div
+            class="MuiCardContent-root css-71xg00-MuiCardContent-root"
+          >
+            <h6
+              class="MuiTypography-root MuiTypography-h6 css-100kqv6-MuiTypography-root"
+            >
+              Batman v Superm ...
+            </h6>
+            <h6
+              class="MuiTypography-root MuiTypography-subtitle2 css-116y7rw-MuiTypography-root"
+            >
+              Action Adventure Fantasy
+            </h6>
+          </div>
+        </div>
+        <div
+          class="MuiBox-root css-lx8xrd"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-189a69h-MuiSvgIcon-root"
+            data-testid="PlayCircleIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM9.5 16.5v-9l7 4.5-7 4.5z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+    >
+      <div
+        class="MuiBox-root css-1fxpa70"
+      >
+        <div
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1tm8ee0-MuiPaper-root-MuiCard-root"
+        >
+          <div
+            class="rating MuiBox-root css-10gsq3s"
+          >
+            <span
+              class="MuiTypography-root MuiTypography-subtitle1 css-10wpov9-MuiTypography-root"
+            >
+              7
+            </span>
+          </div>
+          <img
+            alt="Batman: Soul of ..."
+            class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-gd1bgw-MuiCardMedia-root"
+            src="/uDhnTtSxU5a8DtZdbbin3aZmkmU.jpg"
+          />
+          <div
+            class="MuiCardContent-root css-71xg00-MuiCardContent-root"
+          >
+            <h6
+              class="MuiTypography-root MuiTypography-h6 css-100kqv6-MuiTypography-root"
+            >
+              Batman: Soul of ...
+            </h6>
+            <h6
+              class="MuiTypography-root MuiTypography-subtitle2 css-116y7rw-MuiTypography-root"
+            >
+              Animation Action Adven ...
+            </h6>
+          </div>
+        </div>
+        <div
+          class="MuiBox-root css-lx8xrd"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-189a69h-MuiSvgIcon-root"
+            data-testid="PlayCircleIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM9.5 16.5v-9l7 4.5-7 4.5z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+    >
+      <div
+        class="MuiBox-root css-1fxpa70"
+      >
+        <div
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1tm8ee0-MuiPaper-root-MuiCard-root"
+        >
+          <div
+            class="rating MuiBox-root css-10gsq3s"
+          >
+            <span
+              class="MuiTypography-root MuiTypography-subtitle1 css-10wpov9-MuiTypography-root"
+            >
+              7.1
+            </span>
+          </div>
+          <img
+            alt="Son of Batman"
+            class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-gd1bgw-MuiCardMedia-root"
+            src="/yHx8OLSKc3VtIBB5lIe90c0fHOX.jpg"
+          />
+          <div
+            class="MuiCardContent-root css-71xg00-MuiCardContent-root"
+          >
+            <h6
+              class="MuiTypography-root MuiTypography-h6 css-100kqv6-MuiTypography-root"
+            >
+              Son of Batman
+            </h6>
+            <h6
+              class="MuiTypography-root MuiTypography-subtitle2 css-116y7rw-MuiTypography-root"
+            >
+              Animation Action Adven ...
+            </h6>
+          </div>
+        </div>
+        <div
+          class="MuiBox-root css-lx8xrd"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-189a69h-MuiSvgIcon-root"
+            data-testid="PlayCircleIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM9.5 16.5v-9l7 4.5-7 4.5z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+    >
+      <div
+        class="MuiBox-root css-1fxpa70"
+      >
+        <div
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1tm8ee0-MuiPaper-root-MuiCard-root"
+        >
+          <div
+            class="rating MuiBox-root css-10gsq3s"
+          >
+            <span
+              class="MuiTypography-root MuiTypography-subtitle1 css-10wpov9-MuiTypography-root"
+            >
+              7.2
+            </span>
+          </div>
+          <img
+            alt="Batman: Bad Blood"
+            class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-gd1bgw-MuiCardMedia-root"
+            src="/posters/Batman.jpeg"
+          />
+          <div
+            class="MuiCardContent-root css-71xg00-MuiCardContent-root"
+          >
+            <h6
+              class="MuiTypography-root MuiTypography-h6 css-100kqv6-MuiTypography-root"
+            >
+              Batman: Bad Blood
+            </h6>
+            <h6
+              class="MuiTypography-root MuiTypography-subtitle2 css-116y7rw-MuiTypography-root"
+            >
+              Science Fiction Action ...
+            </h6>
+          </div>
+        </div>
+        <div
+          class="MuiBox-root css-lx8xrd"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-189a69h-MuiSvgIcon-root"
+            data-testid="PlayCircleIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM9.5 16.5v-9l7 4.5-7 4.5z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+    >
+      <div
+        class="MuiBox-root css-1fxpa70"
+      >
+        <div
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1tm8ee0-MuiPaper-root-MuiCard-root"
+        >
+          <div
+            class="rating MuiBox-root css-10gsq3s"
+          >
+            <span
+              class="MuiTypography-root MuiTypography-subtitle1 css-10wpov9-MuiTypography-root"
+            >
+              6.2
+            </span>
+          </div>
+          <img
+            alt="Batman and Harl ..."
+            class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-gd1bgw-MuiCardMedia-root"
+            src="/zrqIPpbqCgrs1rS0ltxNicJcuse.jpg"
+          />
+          <div
+            class="MuiCardContent-root css-71xg00-MuiCardContent-root"
+          >
+            <h6
+              class="MuiTypography-root MuiTypography-h6 css-100kqv6-MuiTypography-root"
+            >
+              Batman and Harl ...
+            </h6>
+            <h6
+              class="MuiTypography-root MuiTypography-subtitle2 css-116y7rw-MuiTypography-root"
+            >
+              Adventure Action Anima ...
+            </h6>
+          </div>
+        </div>
+        <div
+          class="MuiBox-root css-lx8xrd"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-189a69h-MuiSvgIcon-root"
+            data-testid="PlayCircleIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM9.5 16.5v-9l7 4.5-7 4.5z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+    >
+      <div
+        class="MuiBox-root css-1fxpa70"
+      >
+        <div
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1tm8ee0-MuiPaper-root-MuiCard-root"
+        >
+          <div
+            class="rating MuiBox-root css-10gsq3s"
+          >
+            <span
+              class="MuiTypography-root MuiTypography-subtitle1 css-10wpov9-MuiTypography-root"
+            >
+              7.2
+            </span>
+          </div>
+          <img
+            alt="The Lego Batman ..."
+            class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-gd1bgw-MuiCardMedia-root"
+            src="/posters/Batman.jpeg"
+          />
+          <div
+            class="MuiCardContent-root css-71xg00-MuiCardContent-root"
+          >
+            <h6
+              class="MuiTypography-root MuiTypography-h6 css-100kqv6-MuiTypography-root"
+            >
+              The Lego Batman ...
+            </h6>
+            <h6
+              class="MuiTypography-root MuiTypography-subtitle2 css-116y7rw-MuiTypography-root"
+            >
+              Family Action Animatio ...
+            </h6>
+          </div>
+        </div>
+        <div
+          class="MuiBox-root css-lx8xrd"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-189a69h-MuiSvgIcon-root"
+            data-testid="PlayCircleIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM9.5 16.5v-9l7 4.5-7 4.5z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+    >
+      <div
+        class="MuiBox-root css-1fxpa70"
+      >
+        <div
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1tm8ee0-MuiPaper-root-MuiCard-root"
+        >
+          <div
+            class="rating MuiBox-root css-10gsq3s"
+          >
+            <span
+              class="MuiTypography-root MuiTypography-subtitle1 css-10wpov9-MuiTypography-root"
+            >
+              6.3
+            </span>
+          </div>
+          <img
+            alt="Batman"
+            class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-gd1bgw-MuiCardMedia-root"
+            src=""
+          />
+          <div
+            class="MuiCardContent-root css-71xg00-MuiCardContent-root"
+          >
+            <h6
+              class="MuiTypography-root MuiTypography-h6 css-100kqv6-MuiTypography-root"
+            >
+              Batman
+            </h6>
+            <h6
+              class="MuiTypography-root MuiTypography-subtitle2 css-116y7rw-MuiTypography-root"
+            >
+              Family Adventure Comed ...
+            </h6>
+          </div>
+        </div>
+        <div
+          class="MuiBox-root css-lx8xrd"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-189a69h-MuiSvgIcon-root"
+            data-testid="PlayCircleIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM9.5 16.5v-9l7 4.5-7 4.5z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+    >
+      <div
+        class="MuiBox-root css-1fxpa70"
+      >
+        <div
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1tm8ee0-MuiPaper-root-MuiCard-root"
+        >
+          <div
+            class="rating MuiBox-root css-10gsq3s"
+          >
+            <span
+              class="MuiTypography-root MuiTypography-subtitle1 css-10wpov9-MuiTypography-root"
+            >
+              6.6
+            </span>
+          </div>
+          <img
+            alt="Batman: The Kil ..."
+            class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-gd1bgw-MuiCardMedia-root"
+            src="/posters/Batman.jpeg"
+          />
+          <div
+            class="MuiCardContent-root css-71xg00-MuiCardContent-root"
+          >
+            <h6
+              class="MuiTypography-root MuiTypography-h6 css-100kqv6-MuiTypography-root"
+            >
+              Batman: The Kil ...
+            </h6>
+            <h6
+              class="MuiTypography-root MuiTypography-subtitle2 css-116y7rw-MuiTypography-root"
+            >
+              Action Animation Crime ...
+            </h6>
+          </div>
+        </div>
+        <div
+          class="MuiBox-root css-lx8xrd"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-189a69h-MuiSvgIcon-root"
+            data-testid="PlayCircleIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM9.5 16.5v-9l7 4.5-7 4.5z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+    >
+      <div
+        class="MuiBox-root css-1fxpa70"
+      >
+        <div
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1tm8ee0-MuiPaper-root-MuiCard-root"
+        >
+          <div
+            class="rating MuiBox-root css-10gsq3s"
+          >
+            <span
+              class="MuiTypography-root MuiTypography-subtitle1 css-10wpov9-MuiTypography-root"
+            >
+              7.4
+            </span>
+          </div>
+          <img
+            alt="Batman: Assault ..."
+            class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-gd1bgw-MuiCardMedia-root"
+            src=""
+          />
+          <div
+            class="MuiCardContent-root css-71xg00-MuiCardContent-root"
+          >
+            <h6
+              class="MuiTypography-root MuiTypography-h6 css-100kqv6-MuiTypography-root"
+            >
+              Batman: Assault ...
+            </h6>
+            <h6
+              class="MuiTypography-root MuiTypography-subtitle2 css-116y7rw-MuiTypography-root"
+            >
+              Thriller Animation Act ...
+            </h6>
+          </div>
+        </div>
+        <div
+          class="MuiBox-root css-lx8xrd"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-189a69h-MuiSvgIcon-root"
+            data-testid="PlayCircleIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM9.5 16.5v-9l7 4.5-7 4.5z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
