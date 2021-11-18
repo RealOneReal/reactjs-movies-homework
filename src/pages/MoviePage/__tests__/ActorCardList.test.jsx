@@ -1,8 +1,8 @@
 import { render } from "@testing-library/react";
-import ActorCard from "../../ActorCard/ActorCard";
+import ActorCard from "../../../components/ActorCard/ActorCard";
 import ActorCardList from "../ActorCardList";
 
-jest.mock("../../ActorCard/ActorCard", () => () => "ActorCard");
+jest.mock("../../../components/ActorCard/ActorCard", () => () => "ActorCard");
 
 const mockData = {
   cast: [

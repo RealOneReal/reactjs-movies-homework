@@ -12,7 +12,7 @@ const MovieCard = ({
   id,
 }) => {
   const title = truncateString(originalTitle, 19);
-  const genres = truncateString(genreIds?.length && genreIds.join(" "), 26);
+  const genres = truncateString(genreIds.join(" "), 26);
 
   const handleClick = () => {
     console.log(id);

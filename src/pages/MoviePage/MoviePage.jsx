@@ -1,7 +1,7 @@
 import { Box, Container, Typography } from "@mui/material";
 import MoviesRecommendations from "./MoviesRecommendations";
 import PostersContainer from "./PostersContainer";
-import ActorCardContainer from "./ActorCardContainer";
+import ActorCardList from "./ActorCardList";
 
 const MoviePage = ({
   posterPath,
@@ -74,7 +74,7 @@ const MoviePage = ({
             <Typography variant="subtitle2">Genres:</Typography>
             <Typography variant="body1">{movieGenres}</Typography>
             <Typography variant="h6">Top Billed Cast:</Typography>
-            <ActorCardContainer />
+            <ActorCardList />
             <Typography variant="h6">Images:</Typography>
             <PostersContainer />
           </Box>

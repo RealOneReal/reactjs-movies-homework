@@ -2,11 +2,11 @@ import { render } from "@testing-library/react";
 import MoviePage from "../MoviePage";
 import MoviesRecommendations from "../MoviesRecommendations";
 import PostersContainer from "../PostersContainer";
-import ActorCardContainer from "../ActorCardContainer";
+import ActorCardList from "../ActorCardList";
 
 jest.mock("../MoviesRecommendations", () => () => "MoviesRecommendations");
 jest.mock("../PostersContainer", () => () => "PostersContainer");
-jest.mock("../ActorCardContainer", () => () => "ActorCardContainer");
+jest.mock("../ActorCardList", () => () => "ActorCardList");
 
 const mockData = {
   posterPath: "/123",

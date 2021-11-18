@@ -11,7 +11,7 @@ exports[`MainPage should be rendered 1`] = `
       CategoriesToggleButtons
       MainPageContainer
       <div
-        class="MuiBox-root css-2hoarh"
+        class="MuiBox-root css-1mz5wf4"
       >
         MoviesPaggination
       </div>

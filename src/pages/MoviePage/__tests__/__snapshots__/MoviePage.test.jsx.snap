@@ -93,7 +93,7 @@ exports[`MoviePage should be rendered 1`] = `
           >
             Top Billed Cast:
           </h6>
-          ActorCardContainer
+          ActorCardList
           <h6
             class="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
           >
