@@ -5,9 +5,9 @@ import { renameKeysOfFetchingMovies } from "../../utils/objectUtils";
 
 export const fetchMoviesByCategory = createAsyncThunk(
   "movies/fetchMoviesByCategory",
-  async ({ categorie, pageNumber, language }) => {
+  async ({ category, pageNumber, language }) => {
     const response = await axios.get(
-      `${API_MOVIES.BASE_URL}${categorie}${API_MOVIES.API_KEY}&language=${language}&page=${pageNumber}`
+      `${API_MOVIES.BASE_URL}${category}${API_MOVIES.API_KEY}&language=${language}&page=${pageNumber}`
     );
     return renameKeysOfFetchingMovies(response);
   }

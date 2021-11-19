@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Box, TextField, IconButton } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
@@ -21,6 +21,13 @@ const SearchBar = () => {
     dispatch(inputSearch(value));
     dispatch(fetchMoviesBySearch({ value, pageNumber, language }));
   };
+
+  useEffect(() => {
+    if (!value) {
+      return;
+    }
+    dispatch(fetchMoviesBySearch({ value, pageNumber, language }));
+  }, [language, pageNumber]);
 
   const styles = {
     formGroup: {
