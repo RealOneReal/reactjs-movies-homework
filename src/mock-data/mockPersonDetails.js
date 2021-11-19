@@ -2139,10 +2139,10 @@ movies = movies.cast
   .slice(0, 10);
 
 movies.map((film, indexFilm) => {
-  return film.genreIds.map((categorie, indexCategorie) => {
-    const filter = genres.find((genre) => genre.id === categorie);
-    movies[indexFilm].genreIds[indexCategorie] = filter.name;
-    return filter.name;
+  return film.genreIds.map((numberOfGenre, indexOfNumberOfGenre) => {
+    const movieGenre = genres.find((genre) => genre.id === numberOfGenre);
+    movies[indexFilm].genreIds[indexOfNumberOfGenre] = movieGenre.name;
+    return movieGenre.name;
   });
 });
 export { person, movies, photos };
