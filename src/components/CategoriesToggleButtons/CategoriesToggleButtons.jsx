@@ -10,7 +10,6 @@ const CategoriesToggleButtons = () => {
   const pageNumber = useSelector((state) => state.movies.pageNumber);
   const language = useSelector((state) => state.search.language);
   const inputValue = useSelector((state) => state.search.value);
-  console.log(inputValue);
   const handleChangeCategorie = ({ target }) => {
     if (inputValue) {
       return;

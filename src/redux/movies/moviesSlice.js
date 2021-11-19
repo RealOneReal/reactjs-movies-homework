@@ -9,7 +9,12 @@ export const fetchMoviesByCategory = createAsyncThunk(
     const response = await axios.get(
       `${API_MOVIES.BASE_URL}${category}${API_MOVIES.API_KEY}&language=${language}&page=${pageNumber}`
     );
-    return renameKeysOfFetchingMovies(response);
+    const moviesArray = renameKeysOfFetchingMovies(response);
+    const postersArray = moviesArray.results?.map((movie) => {
+      return axios.get(movie.posterPath);
+    });
+    await Promise.allSettled(postersArray);
+    return moviesArray;
   }
 );
 
@@ -19,7 +24,12 @@ export const fetchMoviesBySearch = createAsyncThunk(
     const response = await axios.get(
       `${API_MOVIES.BASE_URL}search/movie${API_MOVIES.API_KEY}&language=${language}&page=${pageNumber}&query=${value}`
     );
-    return renameKeysOfFetchingMovies(response);
+    const moviesArray = renameKeysOfFetchingMovies(response);
+    const postersArray = moviesArray.results?.map((movie) => {
+      return axios.get(movie.posterPath);
+    });
+    await Promise.allSettled(postersArray);
+    return moviesArray;
   }
 );
 

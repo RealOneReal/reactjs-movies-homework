@@ -27,7 +27,7 @@ const SearchBar = () => {
       return;
     }
     dispatch(fetchMoviesBySearch({ value, pageNumber, language }));
-  }, [language, pageNumber]);
+  }, [language, pageNumber, dispatch]);
 
   const styles = {
     formGroup: {
