@@ -1,22 +1,23 @@
 import { useDispatch, useSelector } from "react-redux";
+import { useEffect } from "react";
 import { ToggleButtonGroup, ToggleButton } from "@mui/material";
 import { fetchMoviesByCategory } from "../../redux/movies/moviesSlice";
-import { useEffect, useState } from "react";
+import { categoryChange } from "../../redux/search/searchSlice";
 import { API_MOVIES } from "../../api/moviesAPI";
 
 const CategoriesToggleButtons = () => {
-  const [category, setCategory] = useState(API_MOVIES.POPULAR);
   const dispatch = useDispatch();
-  const pageNumber = useSelector((state) => state.movies.pageNumber);
+
+  const { category } = useSelector((state) => state.search);
   const language = useSelector((state) => state.search.language);
   const inputValue = useSelector((state) => state.search.value);
   const handleChangeCategorie = ({ target }) => {
     if (inputValue) {
       return;
     }
-    setCategory(target.value);
+    dispatch(categoryChange(target.value));
     dispatch(
-      fetchMoviesByCategory({ category: target.value, pageNumber, language })
+      fetchMoviesByCategory({ category: target.value, pageNumber: 1, language })
     );
   };
 
@@ -38,8 +39,8 @@ const CategoriesToggleButtons = () => {
     if (inputValue) {
       return;
     }
-    dispatch(fetchMoviesByCategory({ category, pageNumber, language }));
-  }, [language, pageNumber]);
+    dispatch(fetchMoviesByCategory({ category, pageNumber: 1, language }));
+  }, [language]);
 
   return (
     <ToggleButtonGroup

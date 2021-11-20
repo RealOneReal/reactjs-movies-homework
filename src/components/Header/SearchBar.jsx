@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Box, TextField, IconButton } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
@@ -8,7 +8,6 @@ import { fetchMoviesBySearch } from "../../redux/movies/moviesSlice";
 const SearchBar = () => {
   const [value, setValue] = useState("");
   const dispatch = useDispatch();
-  const { pageNumber } = useSelector((state) => state.movies);
   const { language } = useSelector((state) => state.search);
 
   const handleInput = ({ target }) => {
@@ -19,15 +18,8 @@ const SearchBar = () => {
     event.preventDefault();
     event.key === "Enter " && dispatch(inputSearch(value));
     dispatch(inputSearch(value));
-    dispatch(fetchMoviesBySearch({ value, pageNumber, language }));
+    value && dispatch(fetchMoviesBySearch({ value, pageNumber: 1, language }));
   };
-
-  useEffect(() => {
-    if (!value) {
-      return;
-    }
-    dispatch(fetchMoviesBySearch({ value, pageNumber, language }));
-  }, [language, pageNumber, dispatch]);
 
   const styles = {
     formGroup: {
