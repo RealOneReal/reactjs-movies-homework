@@ -1,7 +1,10 @@
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import { ToggleButtonGroup, ToggleButton } from "@mui/material";
-import { fetchMoviesByCategory } from "../../redux/movies/moviesSlice";
+import {
+  fetchGenresConfig,
+  fetchMoviesByCategory,
+} from "../../redux/movies/moviesSlice";
 import { categoryChange } from "../../redux/search/searchSlice";
 import { API_MOVIES } from "../../api/moviesAPI";
 
@@ -39,6 +42,7 @@ const CategoriesToggleButtons = () => {
     if (inputValue) {
       return;
     }
+    dispatch(fetchGenresConfig({ language }));
     dispatch(fetchMoviesByCategory({ category, pageNumber: 1, language }));
   }, [language]);
 

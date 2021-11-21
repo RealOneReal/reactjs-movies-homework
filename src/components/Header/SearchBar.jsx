@@ -3,7 +3,10 @@ import { useDispatch, useSelector } from "react-redux";
 import { Box, TextField, IconButton } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 import { inputSearch } from "../../redux/search/searchSlice";
-import { fetchMoviesBySearch } from "../../redux/movies/moviesSlice";
+import {
+  fetchMoviesBySearch,
+  fetchGenresConfig,
+} from "../../redux/movies/moviesSlice";
 
 const SearchBar = () => {
   const [value, setValue] = useState("");
@@ -18,6 +21,7 @@ const SearchBar = () => {
     event.preventDefault();
     event.key === "Enter " && dispatch(inputSearch(value));
     dispatch(inputSearch(value));
+    value && dispatch(fetchGenresConfig({ language }));
     value && dispatch(fetchMoviesBySearch({ value, pageNumber: 1, language }));
   };
 

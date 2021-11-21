@@ -1,13 +1,15 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { API_MOVIES } from "../../api/moviesAPI";
 
+const initialState = {
+  value: "",
+  language: "en",
+  category: API_MOVIES.POPULAR,
+};
+
 export const searchSlice = createSlice({
   name: "search",
-  initialState: {
-    value: "",
-    language: "en",
-    category: API_MOVIES.POPULAR,
-  },
+  initialState,
   reducers: {
     inputSearch: (state, action) => {
       state.value = action.payload;

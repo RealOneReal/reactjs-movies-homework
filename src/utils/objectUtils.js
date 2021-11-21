@@ -17,3 +17,13 @@ export const renameKeysOfFetchingMovies = (obj) => {
     }),
   };
 };
+
+export const decodeGenres = (movies, config) => {
+  return movies?.map((movie) => {
+    const genreIds = movie.genreIds?.map((code) => {
+      const movieGenre = config.find((genre) => genre.id === code);
+      return movieGenre.name;
+    });
+    return { ...movie, genreIds };
+  });
+};

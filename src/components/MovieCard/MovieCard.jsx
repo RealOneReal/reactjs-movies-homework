@@ -47,7 +47,7 @@ const MovieCard = ({
             sx={styles.genres}
             color="primary.dark"
           >
-            {genreIds}
+            {genres}
           </Typography>
         </CardContent>
       </Card>
