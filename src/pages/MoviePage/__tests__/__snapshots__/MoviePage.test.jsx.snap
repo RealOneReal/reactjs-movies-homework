@@ -1,0 +1,118 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MoviePage should be rendered 1`] = `
+<div>
+  <div
+    class="MuiBox-root css-4ozt90"
+  >
+    <div
+      class="MuiContainer-root MuiContainer-maxWidthLg css-r5r38p-MuiContainer-root"
+    >
+      <div
+        class="main-section MuiBox-root css-n0klh3"
+      >
+        <div
+          class="main-section_movie MuiBox-root css-0"
+        >
+          <div
+            class="MuiBox-root css-gittgl"
+          >
+            <div
+              class="MuiTypography-root MuiTypography-h6 css-8c5bzc-MuiTypography-root"
+            >
+              5
+            </div>
+          </div>
+        </div>
+        <div
+          class="main-section_movie-items MuiBox-root css-0"
+        >
+          <h6
+            class="MuiTypography-root MuiTypography-subtitle2 css-ati914-MuiTypography-root"
+          >
+            Title:
+          </h6>
+          <h3
+            class="MuiTypography-root MuiTypography-h3 css-gepadz-MuiTypography-root"
+          >
+            Matrix
+          </h3>
+          <h6
+            class="MuiTypography-root MuiTypography-subtitle2 css-ati914-MuiTypography-root"
+          >
+            Overview:
+          </h6>
+          <p
+            class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+          >
+            nice movie
+          </p>
+          <h6
+            class="MuiTypography-root MuiTypography-subtitle2 css-ati914-MuiTypography-root"
+          >
+            Release date:
+          </h6>
+          <p
+            class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+          >
+            18.02.1998
+          </p>
+          <h6
+            class="MuiTypography-root MuiTypography-subtitle2 css-ati914-MuiTypography-root"
+          >
+            Revenue:
+          </h6>
+          <p
+            class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+          >
+            $ 1.000.000
+          </p>
+          <h6
+            class="MuiTypography-root MuiTypography-subtitle2 css-ati914-MuiTypography-root"
+          >
+            Duration:
+          </h6>
+          <p
+            class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+          >
+            5:0
+          </p>
+          <h6
+            class="MuiTypography-root MuiTypography-subtitle2 css-ati914-MuiTypography-root"
+          >
+            Genres:
+          </h6>
+          <p
+            class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+          >
+            comedy 
+            action 
+          </p>
+          <h6
+            class="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+          >
+            Top Billed Cast:
+          </h6>
+          ActorCardList
+          <h6
+            class="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+          >
+            Images:
+          </h6>
+          PostersContainer
+        </div>
+      </div>
+      <div
+        class="recommendations MuiBox-root css-0"
+      >
+        <h5
+          class="MuiTypography-root MuiTypography-h5 css-1jo76pw-MuiTypography-root"
+        >
+          RECOMMENDATIONS :
+        </h5>
+        MoviesPageMovieCardList
+      </div>
+    </div>
+  </div>
+</div>
+`;

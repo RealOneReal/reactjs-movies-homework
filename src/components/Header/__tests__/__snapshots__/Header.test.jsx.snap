@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header should be rendered 1`] = `
+<div>
+  <header
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionStatic css-z6o611-MuiPaper-root-MuiAppBar-root"
+  >
+    <div
+      class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-80fgyj-MuiToolbar-root"
+    >
+      <h1
+        class="MuiTypography-root MuiTypography-h4 css-1uoyj95-MuiTypography-root"
+      >
+        TITLE
+      </h1>
+      SearchBar
+      LanguageSwitcher
+    </div>
+  </header>
+</div>
+`;

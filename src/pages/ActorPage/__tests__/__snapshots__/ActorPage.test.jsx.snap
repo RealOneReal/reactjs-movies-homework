@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ActorPage should be rendered 1`] = `
+<div>
+  <div
+    class="MuiBox-root css-4ozt90"
+  >
+    <div
+      class="MuiContainer-root MuiContainer-maxWidthLg css-r5r38p-MuiContainer-root"
+    >
+      <div
+        class="main-section MuiBox-root css-n0klh3"
+      >
+        <div
+          class="main-section_actor MuiBox-root css-0"
+        >
+          <div
+            class="MuiBox-root css-gittgl"
+          />
+        </div>
+        <div
+          class="main-section_actor-items MuiBox-root css-0"
+        >
+          <h3
+            class="MuiTypography-root MuiTypography-h3 css-gepadz-MuiTypography-root"
+          >
+            Leo
+          </h3>
+          <h6
+            class="MuiTypography-root MuiTypography-subtitle2 css-ati914-MuiTypography-root"
+          >
+            Birthday:
+          </h6>
+          <p
+            class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+          >
+            19.02.1987
+          </p>
+          <h6
+            class="MuiTypography-root MuiTypography-subtitle2 css-ati914-MuiTypography-root"
+          >
+            Place of birth:
+          </h6>
+          <p
+            class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+          >
+            Brest
+          </p>
+          <h6
+            class="MuiTypography-root MuiTypography-subtitle2 css-ati914-MuiTypography-root"
+          >
+            Biography:
+          </h6>
+          <p
+            class="MuiTypography-root MuiTypography-body1 css-ahj2mt-MuiTypography-root"
+          >
+            CoolMan
+          </p>
+          <h6
+            class="MuiTypography-root MuiTypography-h6 css-2ulfj5-MuiTypography-root"
+          >
+            Photos:
+          </h6>
+          PhtosContainer
+        </div>
+      </div>
+      <div
+        class="known-by MuiBox-root css-0"
+      >
+        <h5
+          class="MuiTypography-root MuiTypography-h5 css-ag7rrr-MuiTypography-root"
+        >
+           KNOWN BY:
+        </h5>
+        ../ActorPageMovieCardList
+      </div>
+    </div>
+  </div>
+</div>
+`;

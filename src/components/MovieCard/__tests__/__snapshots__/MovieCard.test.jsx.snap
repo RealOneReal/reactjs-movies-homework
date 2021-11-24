@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MovieCard should be rendered 1`] = `
+<div>
+  <div
+    class="MuiBox-root css-1fxpa70"
+  >
+    <div
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1tm8ee0-MuiPaper-root-MuiCard-root"
+    >
+      <div
+        class="rating MuiBox-root css-10gsq3s"
+      >
+        <span
+          class="MuiTypography-root MuiTypography-subtitle1 css-10wpov9-MuiTypography-root"
+        >
+          9
+        </span>
+      </div>
+      <img
+        alt="Ninja"
+        class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-gd1bgw-MuiCardMedia-root"
+      />
+      <div
+        class="MuiCardContent-root css-71xg00-MuiCardContent-root"
+      >
+        <h6
+          class="MuiTypography-root MuiTypography-h6 css-100kqv6-MuiTypography-root"
+        >
+          Ninja
+        </h6>
+        <h6
+          class="MuiTypography-root MuiTypography-subtitle2 css-116y7rw-MuiTypography-root"
+        >
+          comedy history
+        </h6>
+      </div>
+    </div>
+    <div
+      class="MuiBox-root css-lx8xrd"
+    >
+      <svg
+        aria-hidden="true"
+        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-189a69h-MuiSvgIcon-root"
+        data-testid="PlayCircleIcon"
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM9.5 16.5v-9l7 4.5-7 4.5z"
+        />
+      </svg>
+    </div>
+  </div>
+</div>
+`;
