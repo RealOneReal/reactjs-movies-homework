@@ -4,7 +4,7 @@ import { moviesSlice } from "../../redux/movies/moviesSlice";
 import {
   fetchMoviesByCategory,
   fetchMoviesBySearch,
-} from "../../redux/movies/moviesSlice";
+} from "../../redux/movies/moviesThunks";
 
 const MoviesPagination = () => {
   const dispatch = useDispatch();

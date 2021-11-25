@@ -1,55 +1,19 @@
-import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import axios from "axios";
-import { API_MOVIES } from "../../api/moviesAPI";
+import { createSlice } from "@reduxjs/toolkit";
+import { fetchStatus } from "../constants";
 import {
-  renameKeysOfFetchingMovies,
-  decodeGenres,
-} from "../../utils/objectUtils";
+  fetchMoviesByCategory,
+  fetchGenresConfig,
+  fetchMoviesBySearch,
+} from "./moviesThunks";
 
 const initialState = {
   movies: [],
-  status: "idle",
+  status: fetchStatus.idle,
   error: null,
   totalPages: 0,
   pageNumber: 1,
   genresConfig: [],
 };
-
-export const fetchMoviesByCategory = createAsyncThunk(
-  "movies/fetchMoviesByCategory",
-  async ({ category, pageNumber, language }, { getState }) => {
-    const response = await axios.get(
-      `${API_MOVIES.BASE_URL}${category}${API_MOVIES.API_KEY}&language=${language}&page=${pageNumber}`
-    );
-    const movies = renameKeysOfFetchingMovies(response);
-    const genreConfig = getState().movies.genresConfig;
-    const results = decodeGenres(movies.results, genreConfig);
-    return { ...movies, results };
-  }
-);
-
-export const fetchMoviesBySearch = createAsyncThunk(
-  "movies/fetchMoviesBySearch",
-  async ({ pageNumber, language, value }, { getState }) => {
-    const response = await axios.get(
-      `${API_MOVIES.BASE_URL}search/movie${API_MOVIES.API_KEY}&language=${language}&page=${pageNumber}&query=${value}`
-    );
-    const movies = renameKeysOfFetchingMovies(response);
-    const genreConfig = getState().movies.genresConfig;
-    const results = decodeGenres(movies.results, genreConfig);
-    return { ...movies, results };
-  }
-);
-
-export const fetchGenresConfig = createAsyncThunk(
-  "movies/genresConfig",
-  async ({ language }) => {
-    const response = await axios.get(
-      `${API_MOVIES.GENRES_LIST}&language=${language}`
-    );
-    return response.data;
-  }
-);
 
 export const moviesSlice = createSlice({
   name: "movies",
@@ -63,41 +27,42 @@ export const moviesSlice = createSlice({
     builder
       .addCase(fetchMoviesByCategory.pending, (state) => {
         state.error = null;
-        state.status = "loading";
+        state.status = fetchStatus.loading;
       })
       .addCase(fetchMoviesByCategory.fulfilled, (state, action) => {
-        state.status = "success";
+        state.status = fetchStatus.success;
         state.movies = action.payload.results;
         state.pageNumber = action.payload.page;
         state.totalPages = action.payload.total_pages;
       })
       .addCase(fetchMoviesByCategory.rejected, (state, action) => {
-        state.status = "failure";
+        state.status = fetchStatus.failure;
         state.error = action.error.message;
       })
       .addCase(fetchMoviesBySearch.pending, (state) => {
         state.error = null;
-        state.status = "loading";
+        state.status = fetchStatus.loading;
       })
       .addCase(fetchMoviesBySearch.fulfilled, (state, action) => {
-        state.status = "success";
+        state.status = fetchStatus.success;
         state.movies = action.payload.results;
         state.pageNumber = action.payload.page;
         state.totalPages = action.payload.total_pages;
       })
       .addCase(fetchMoviesBySearch.rejected, (state, action) => {
-        state.status = "failure";
+        state.status = fetchStatus.failure;
         state.error = action.error.message;
       })
       .addCase(fetchGenresConfig.pending, (state) => {
-        state.status = "loading";
+        state.error = null;
+        state.status = fetchStatus.loading;
       })
       .addCase(fetchGenresConfig.fulfilled, (state, action) => {
-        state.status = "success";
+        state.status = fetchStatus.success;
         state.genresConfig = action.payload.genres;
       })
       .addCase(fetchGenresConfig.rejected, (state, action) => {
-        state.status = "failure";
+        state.status = fetchStatus.failure;
         state.error = action.error.message;
       });
   },

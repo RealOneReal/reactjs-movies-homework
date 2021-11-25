@@ -1,6 +1,8 @@
 import { CircularProgress, Backdrop } from "@mui/material";
+import { fetchStatus } from "../../redux/constants";
+
 const Spinner = ({ status }) => {
-  const isVisible = status === "loading" ? true : false;
+  const isVisible = status === fetchStatus.loading ? true : false;
   const styles = {
     backdrop: { zIndex: "10" },
     spinner: {

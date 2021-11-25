@@ -6,7 +6,7 @@ import { inputSearch } from "../../redux/search/searchSlice";
 import {
   fetchMoviesBySearch,
   fetchGenresConfig,
-} from "../../redux/movies/moviesSlice";
+} from "../../redux/movies/moviesThunks";
 
 const SearchBar = () => {
   const [value, setValue] = useState("");

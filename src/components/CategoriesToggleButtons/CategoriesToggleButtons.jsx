@@ -4,7 +4,7 @@ import { ToggleButtonGroup, ToggleButton } from "@mui/material";
 import {
   fetchGenresConfig,
   fetchMoviesByCategory,
-} from "../../redux/movies/moviesSlice";
+} from "../../redux/movies/moviesThunks";
 import { categoryChange } from "../../redux/search/searchSlice";
 import { API_MOVIES } from "../../api/moviesAPI";
 
