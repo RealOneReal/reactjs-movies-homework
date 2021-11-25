@@ -9,12 +9,11 @@ import {
 } from "../../redux/movies/moviesThunks";
 
 const SearchBar = () => {
-  const [value, setValue] = useState("");
   const dispatch = useDispatch();
-  const { language } = useSelector((state) => state.search);
+  const { language, value } = useSelector((state) => state.search);
 
   const handleInput = ({ target }) => {
-    setValue(target.value);
+    dispatch(inputSearch(target.value));
   };
 
   const handleSubmit = (event) => {

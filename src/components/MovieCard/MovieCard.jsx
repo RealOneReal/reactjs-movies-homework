@@ -5,7 +5,7 @@ import styles from "./styles";
 import { truncateString } from "../../utils/stringUtils";
 
 const MovieCard = ({ posterPath, genreIds, voteAverage, title, id }) => {
-  const movieTitle = truncateString(title, 19);
+  const movieTitle = truncateString(title, 18);
   const genres = truncateString(genreIds.join(" "), 26);
 
   const handleClick = () => {
