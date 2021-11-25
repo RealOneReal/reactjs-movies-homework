@@ -12,7 +12,6 @@ const initialState = {
   error: null,
   totalPages: 0,
   pageNumber: 1,
-  images: {},
   genresConfig: [],
 };
 

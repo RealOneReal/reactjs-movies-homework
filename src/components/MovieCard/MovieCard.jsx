@@ -4,14 +4,8 @@ import fallback from "../../assets/broken-image.png";
 import styles from "./styles";
 import { truncateString } from "../../utils/stringUtils";
 
-const MovieCard = ({
-  posterPath,
-  genreIds,
-  voteAverage,
-  originalTitle,
-  id,
-}) => {
-  const title = truncateString(originalTitle, 19);
+const MovieCard = ({ posterPath, genreIds, voteAverage, title, id }) => {
+  const movieTitle = truncateString(title, 19);
   const genres = truncateString(genreIds.join(" "), 26);
 
   const handleClick = () => {

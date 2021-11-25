@@ -2,11 +2,8 @@ import { Box, Container } from "@mui/material";
 import MainPageMovieCardList from "./MainPageMovieCardList";
 import MoviesPagination from "../../components/MoviesPagination/MoviesPagination";
 import CategoriesToggleButtons from "../../components/CategoriesToggleButtons/CategoriesToggleButtons";
-import Spinner from "../../components/Spinner/Spinner";
 
 const MainPage = () => {
-  const { status } = useSelector((state) => state.movies);
-  console.log("render");
   return (
     <Box
       sx={{
@@ -14,7 +11,6 @@ const MainPage = () => {
         minHeight: "calc(100vh - 80px)",
       }}
     >
-      <Spinner status={status} />
       <Container maxWidth="lg" sx={{ pt: 2 }}>
         <CategoriesToggleButtons />
         <MainPageMovieCardList />
