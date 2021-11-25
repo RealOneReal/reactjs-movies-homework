@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Box, TextField, IconButton } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
