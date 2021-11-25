@@ -1,20 +1,28 @@
-import { Grid } from "@mui/material";
+import { Grid, Box, Typography } from "@mui/material";
+import { useSelector } from "react-redux";
 import MovieCard from "../../components/MovieCard/MovieCard";
-import DataFromTMDB from "../../mock-data/mockMovies";
+import Spinner from "../../components/Spinner/Spinner";
 
 const MainPageMovieCardList = () => {
-  // todo: add mockData from MovieDB
-  const results = DataFromTMDB.results;
+  const { movies, status } = useSelector((state) => state.movies);
 
   return (
-    <Grid container spacing={1} justifyContent="center">
-      {results &&
-        results.map((card) => (
-          <Grid item key={card.id}>
-            <MovieCard {...card} />
-          </Grid>
-        ))}
-    </Grid>
+    <>
+      <Spinner status={status} />
+      <Grid container spacing={1} justifyContent="center">
+        {movies.length ? (
+          movies.map((card) => (
+            <Grid item key={card.id}>
+              <MovieCard {...card} />
+            </Grid>
+          ))
+        ) : (
+          <Box sx={{ textAlign: "center", mt: 10 }}>
+            <Typography variant="h3">Nothing not found</Typography>
+          </Box>
+        )}
+      </Grid>
+    </>
   );
 };
 export default MainPageMovieCardList;

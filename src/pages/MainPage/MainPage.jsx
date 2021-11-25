@@ -2,11 +2,15 @@ import { Box, Container } from "@mui/material";
 import MainPageMovieCardList from "./MainPageMovieCardList";
 import MoviesPagination from "../../components/MoviesPagination/MoviesPagination";
 import CategoriesToggleButtons from "../../components/CategoriesToggleButtons/CategoriesToggleButtons";
-import DataFromTMDB from "../../mock-data/mockMovies";
 
 const MainPage = () => {
   return (
-    <Box sx={{ backgroundColor: "secondary.dark" }}>
+    <Box
+      sx={{
+        backgroundColor: "secondary.dark",
+        minHeight: "calc(100vh - 80px)",
+      }}
+    >
       <Container maxWidth="lg" sx={{ pt: 2 }}>
         <CategoriesToggleButtons />
         <MainPageMovieCardList />
@@ -18,7 +22,7 @@ const MainPage = () => {
             padding: " 16px 0",
           }}
         >
-          <MoviesPagination {...DataFromTMDB}></MoviesPagination>
+          <MoviesPagination />
         </Box>
       </Container>
     </Box>

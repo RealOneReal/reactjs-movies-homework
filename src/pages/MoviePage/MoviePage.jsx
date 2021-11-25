@@ -50,7 +50,12 @@ const MoviePage = ({
   };
 
   return (
-    <Box sx={{ backgroundColor: "secondary.dark" }}>
+    <Box
+      sx={{
+        backgroundColor: "secondary.dark",
+        minHeight: "calc(100vh - 80px)",
+      }}
+    >
       <Container maxWidth="lg" sx={{ pt: 2 }}>
         <Box className="main-section" sx={styles.main_section}>
           <Box className="main-section_movie">

@@ -4,14 +4,8 @@ import fallback from "../../assets/broken-image.png";
 import styles from "./styles";
 import { truncateString } from "../../utils/stringUtils";
 
-const MovieCard = ({
-  posterPath,
-  genreIds,
-  voteAverage,
-  originalTitle,
-  id,
-}) => {
-  const title = truncateString(originalTitle, 19);
+const MovieCard = ({ posterPath, genreIds, voteAverage, title, id }) => {
+  const movieTitle = truncateString(title, 18);
   const genres = truncateString(genreIds.join(" "), 26);
 
   const handleClick = () => {
@@ -33,14 +27,14 @@ const MovieCard = ({
         </Box>
         <CardMedia
           component="img"
-          alt={title}
+          alt={movieTitle}
           src={posterPath}
           sx={styles.cardImage}
           onError={handleMediaFallback}
         />
         <CardContent sx={{ p: 1 }}>
           <Typography variant="h6" color="primary.light">
-            {title}
+            {movieTitle}
           </Typography>
           <Typography
             variant="subtitle2"

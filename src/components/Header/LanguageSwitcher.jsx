@@ -1,11 +1,15 @@
 import { FormControl, Select, MenuItem } from "@mui/material";
 import { useState } from "react";
+import { useDispatch } from "react-redux";
+import { language } from "../../redux/search/searchSlice";
 
 const LanguageSwitcher = () => {
-  const [language, setLanguage] = useState("EN");
+  const [languageFromInput, setLanguage] = useState("en");
+  const dispatch = useDispatch();
 
   const handleChange = ({ target }) => {
     setLanguage(target.value);
+    dispatch(language(target.value));
   };
 
   const styles = {
@@ -23,16 +27,16 @@ const LanguageSwitcher = () => {
   return (
     <FormControl>
       <Select
-        value={language}
+        value={languageFromInput}
         onChange={handleChange}
         variant="standard"
         color="secondary"
         sx={styles.select}
       >
-        <MenuItem value="EN" sx={styles.menuItem}>
+        <MenuItem value="en" sx={styles.menuItem}>
           EN
         </MenuItem>
-        <MenuItem value="RU" sx={styles.menuItem}>
+        <MenuItem value="ru" sx={styles.menuItem}>
           RU
         </MenuItem>
       </Select>

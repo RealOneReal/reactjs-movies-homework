@@ -1,11 +1,27 @@
-import { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { useEffect } from "react";
 import { ToggleButtonGroup, ToggleButton } from "@mui/material";
+import {
+  fetchGenresConfig,
+  fetchMoviesByCategory,
+} from "../../redux/movies/moviesThunks";
+import { categoryChange } from "../../redux/search/searchSlice";
+import { API_MOVIES } from "../../api/moviesAPI";
 
 const CategoriesToggleButtons = () => {
-  const [categorie, setCategorie] = useState("popular");
+  const dispatch = useDispatch();
 
+  const { category } = useSelector((state) => state.search);
+  const language = useSelector((state) => state.search.language);
+  const inputValue = useSelector((state) => state.search.value);
   const handleChangeCategorie = ({ target }) => {
-    setCategorie(target.value);
+    if (inputValue) {
+      return;
+    }
+    dispatch(categoryChange(target.value));
+    dispatch(
+      fetchMoviesByCategory({ category: target.value, pageNumber: 1, language })
+    );
   };
 
   const styles = {
@@ -22,21 +38,29 @@ const CategoriesToggleButtons = () => {
     },
   };
 
+  useEffect(() => {
+    if (inputValue) {
+      return;
+    }
+    dispatch(fetchGenresConfig({ language }));
+    dispatch(fetchMoviesByCategory({ category, pageNumber: 1, language }));
+  }, [language]);
+
   return (
     <ToggleButtonGroup
-      value={categorie}
+      value={category}
       color="primary"
       onChange={handleChangeCategorie}
       exclusive
       sx={styles.group}
     >
-      <ToggleButton value="popular" sx={styles.button}>
+      <ToggleButton value={API_MOVIES.POPULAR} sx={styles.button}>
         Popular
       </ToggleButton>
-      <ToggleButton value="top_rated" sx={styles.button}>
+      <ToggleButton value={API_MOVIES.TOP_RATED} sx={styles.button}>
         Top rated
       </ToggleButton>
-      <ToggleButton value="upcoming" sx={styles.button}>
+      <ToggleButton value={API_MOVIES.UPCOMING} sx={styles.button}>
         Upcoming
       </ToggleButton>
     </ToggleButtonGroup>
